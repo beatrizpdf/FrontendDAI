@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .textJogos {
+    width: 202px;
+    color: rgba(216,14,159,1);
+    position: absolute;
+    top: 44px;
+    left: 106px;
+    font-family: Roboto;
+    font-weight: Light;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .secondGrayRectangle {
+    width: 143px;
+    height: 143px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 121px;
+    left: 217px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .secondRoseRectangle {
+    width: 131px;
+    height: 131px;
+    background: rgba(228,44,176,0.20999999344348907);
+    opacity: 1;
+    position: absolute;
+    top: 127px;
+    left: 223px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+  }
+  .textSopaLetras {
+    width: 134px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 274px;
+    left: 224px;
+    font-family: 'Poppins';
+    font-size: 19px;
+    opacity: 1;
+    text-align: center;
+  }
+  .firstGrayRectangle {
+    width: 143px;
+    height: 143px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 121px;
+    left: 56px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .firstRoseRectangle {
+    width: 131px;
+    height: 131px;
+    background: rgba(228,44,176,0.20999999344348907);
+    opacity: 1;
+    position: absolute;
+    top: 127px;
+    left: 62px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+  }
+  .textCartazes {
+    width: 76px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 274px;
+    left: 85px;
+    font-family: Poppins;
+    font-weight: Regular;
+    font-size: 19px;
+    opacity: 1;
+    text-align: center;
+  }
+  .thirdGrayRectangle {
+    width: 143px;
+    height: 143px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 458px;
+    left: 134px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .yellowRectangle {
+    width: 131px;
+    height: 131px;
+    background: rgba(244,236,39,0.4399999976158142);
+    opacity: 1;
+    position: absolute;
+    top: 464px;
+    left: 140px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+  }
+  .textRank {
+    width: 76px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 609px;
+    left: 170px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 19px;
+    opacity: 1;
+    text-align: center;
+  }
+  .text {
+    width: 301px;
+    color: rgb(169 166 166 / 60%);
+    position: absolute;
+    top: 367px;
+    left: 58px;
+    font-family: Roboto;
+    font-size: 25px;
+    opacity: 1;
+    text-align: center;
+  }
+  #buttonbackJogosCrianças {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    border: none;
+    font-size: x-large;
+    color: lightgray;
+    background-color: rgba(250, 249, 249, 1);
+}

@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .circleOne {
+    width: 207px;
+    height: 191px;
+    background: rgba(160,157,157,0.05000000074505806);
+    opacity: 1;
+    position: absolute;
+    top: -35px;
+    left: -125px;
+    border-radius: 50%;
+  }
+  .circleTwo {
+    width: 179px;
+    height: 183px;
+    background: rgba(186,185,198,0.1899999976158142);
+    opacity: 1;
+    position: absolute;
+    top: -106px;
+    left: -26px;
+    border-radius: 50%;
+  }
+  .profileIcon {
+    width: 92px;
+    height: 92px;
+    background: rgba(255,217,240,1);
+    opacity: 1;
+    position: absolute;
+    top: 25px;
+    left: 44px;
+    border-radius: 50%;
+  }
+  .name {
+    width: 155px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 57px;
+    left: 161px;
+    font-family: Poppins;
+    font-size: 26px;
+    opacity: 1;
+    text-align: left;
+  }
+  .firstGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 132px;
+    left: 73px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .firstBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 140px;
+    left: 82px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textChat {
+    width: 43px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 268px;
+    left: 119px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .fifthGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 463px;
+    left: 73px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .fifthBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 471px;
+    left: 82px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textLinhasApoio {
+    width: 115px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 599px;
+    left: 81px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+  }
+  .sixthGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 463px;
+    left: 217px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+}
+  .sixthBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 471px;
+    left: 225px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textConta {
+    width: 108px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 599px;
+    left: 236px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .thirdGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 297px;
+    left: 73px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .thirdBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 305px;
+    left: 82px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textForum {
+    width: 54px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 434px;
+    left: 115px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .fourthGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 297px;
+    left: 217px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .fourthBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 305px;
+    left: 225px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textDireitos {
+    width: 76px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 434px;
+    left: 253px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .secondGraySquare {
+    width: 131px;
+    height: 131px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 132px;
+    left: 217px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .secondBlueSquare {
+    width: 115px;
+    height: 115px;
+    background: rgba(210,219,249,1);
+    opacity: 1;
+    position: absolute;
+    top: 140px;
+    left: 225px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border:none;
+  }
+  .textJogos {
+    width: 58px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 268px;
+    left: 256px;
+    font-family: 'Poppins';
+    font-weight: Regular;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+  }
+  .grayRectangle {
+    width: 185px;
+    height: 48px;
+    background: rgba(236,236,235,1);
+    opacity: 1;
+    position: absolute;
+    top: 704px;
+    left: 118px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+  }
+  .roseCircle {
+    width: 70px;
+    height: 70px;
+    background: rgba(229,0,78,0.41999998688697815);
+    opacity: 1;
+    position: absolute;
+    top: 680px;
+    left: 175px;
+    border-radius: 50%;
+  }
+
+  .textDenuncia {
+    width: 159px;
+    color: rgba(212,208,208,0.8999999761581421);
+    position: absolute;
+    top: 642px;
+    left: 129px;
+    font-family: Dokdo;
+    font-weight: Regular;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  #iconmenuPaginaInicialCrianças {
+    top: 56px;
+    left: 343px;
+    border: none;
+    position: absolute;
+    font-size: x-large;
+    background: none;
+    color: rgb(195 195 194);
+}

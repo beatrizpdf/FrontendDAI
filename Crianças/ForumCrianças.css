@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .textForum {
+    width: 202px;
+    color: rgba(19,4,112,1);
+    position: absolute;
+    top: 44px;
+    left: 106px;
+    font-family: Roboto;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .blueRectangle {
+    width: 145px;
+    height: 38px;
+    background: rgba(19,4,112,0.23000000417232513);
+    opacity: 1;
+    position: absolute;
+    top: 112px;
+    left: 134px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .textArtigos {
+    width: 145px;
+    color: rgba(19,4,112,1);
+    position: absolute;
+    top: 112px;
+    left: 135px;
+    font-family: Roboto;
+    font-weight: Light;
+    font-size: 30px;
+    opacity: 1;
+    text-align: center;
+  }
+  #buttonbackForumCrianças {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    border: none;
+    font-size: x-large;
+    color: lightgray;
+    background-color: rgba(250, 249, 249, 1);
+}

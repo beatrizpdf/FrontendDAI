@@ -18,7 +18,7 @@
     width: 292px;
     color: rgb(216 214 214);
     position: absolute;
-    top: 181px;
+    top: 159px;
     left: 25.5%;
     font-family: Roboto;
     font-size: 33px;
@@ -30,15 +30,12 @@
     height: 13px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 543px;
+    top: 503px;
     left: 101px;
     font-family: Poppins;
     font-size: 15px;
     opacity: 1;
     text-align: center;
-  }
-  .name {
-    color: #fff;
   }
   .firstBox {
     width: 325px;
@@ -46,7 +43,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 261px;
+    top: 228px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -55,74 +52,11 @@
     overflow: hidden;
     border: none;
   }
-  .v217_54 {
-    width: 60px;
-    height: 56px;
-    background: url("../images/v217_54.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 22px 24px;
-    margin: 10px;
-    opacity: 1;
-    position: absolute;
-    top: 4px;
-    left: 265px;
-    overflow: hidden;
-  }
-  .v217_55 {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 13px;
-    left: 19px;
-    overflow: hidden;
-  }
-  .v217_56 {
-    height: 16px;
-    background: url("../images/v217_56.png");
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border: 2px solid rgba(160,163,189,1);
-    transform: rotate(-45deg);
-  }
-  .v217_57 {
-    height: 16px;
-    background: url("../images/v217_57.png");
-    opacity: 1;
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    border: 2px solid rgba(160,163,189,1);
-    transform: rotate(-135deg);
-  }
-  .v217_58 {
-    width: 184px;
-    height: 40px;
-    background: url("../images/v217_58.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 6px 0px;
-    opacity: 1;
-    position: absolute;
-    top: 12px;
-    left: 67px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    overflow: hidden;
-  }
   .textEmailUsername {
     width: 206px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 267px;
+    top: 233px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -135,7 +69,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 342px;
+    top: 313px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -144,92 +78,16 @@
     overflow: hidden;
     border: none;
   }
-  .v217_61 {
-    width: 60px;
-    height: 56px;
-    background: url("../images/v217_61.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 22px 24px;
-    margin: 10px;
-    opacity: 1;
-    position: absolute;
-    top: 4px;
-    left: 265px;
-    overflow: hidden;
-  }
-  .v217_62 {
-    width: 12px;
-    height: 12px;
-    background: rgba(255,255,255,1);
-    opacity: 1;
-    position: absolute;
-    top: 12px;
-    left: 17px;
-    overflow: hidden;
-  }
-  .v217_63 {
-    height: 16px;
-    background: url("../images/v217_63.png");
-    opacity: 1;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    border: 2px solid rgba(160,163,189,1);
-    transform: rotate(-45deg);
-  }
-  .v217_64 {
-    height: 16px;
-    background: url("../images/v217_64.png");
-    opacity: 1;
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    border: 2px solid rgba(160,163,189,1);
-    transform: rotate(-135deg);
-  }
-  .v217_65 {
-    width: 184px;
-    height: 40px;
-    background: url("../images/v217_65.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    padding: 6px 0px;
-    opacity: 1;
-    position: absolute;
-    top: 12px;
-    left: 66px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    overflow: hidden;
-  }
   .textPassword {
     width: 128px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 347px;
+    top: 317px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
-  }
-  .v217_67 {
-    width: 230px;
-    height: 46px;
-    background: url("../images/v217_67.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    position: absolute;
-    top: 461px;
-    left: 71px;
-    overflow: hidden;
   }
   .buttonIniciar {
     width: 230px;
@@ -237,7 +95,7 @@
     background: rgba(229,0,78,0.6299999952316284);
     opacity: 1;
     position: relative;
-    top: 441px;
+    top: 417px;
     left: 91px;
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
@@ -252,16 +110,24 @@
     border: none;
     box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
   }
-  .v217_69 {
-    width: 230px;
-    color: rgba(245,244,242,1);
-    position: relative;
-    top: 0px;
-    left: 0px;
-    font-family: Roboto;
-    font-weight: Bold;
-    font-size: 18px;
-    opacity: 1;
-    text-align: center;
+  .buttonImpressaoDigital {
+    width: 89px;
+    height: 80px;
+    background: rgb(229 0 78 / 40%);
+    position: absolute;
+    top: 628px;
+    left: 161px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
   }
   
+  #iconFingerPrint {
+    color: rgb(255 255 255 / 67%);
+    top: 649px;
+    left: 186px;
+    position: absolute;
+  }

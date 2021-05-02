@@ -14,6 +14,34 @@
     left: 0px;
     overflow: hidden;
   }
+  #anotherCombobox {
+    position: absolute;
+    top: 151px;
+    left: 17%;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: rgba(239,240,246,1);
+    z-index: 99;
+    color: rgba(154,154,154,1);
+  }
+  #comboboxs {
+    position: absolute;
+    top: 446px;
+    left: 12%;
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-color: rgba(239,240,246,1);
+    z-index: 99;
+    color: rgba(154,154,154,1);
+    padding: 8px 16px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border: none;
+}
   .buttonRegisto {
     width: 230px;
     height: 46px;
@@ -360,13 +388,12 @@
   }
   .text {
     width: 68px;
-    color: rgba(60,60,60,1);
+    color: rgba(154,154,154,1);
     position: absolute;
-    top: 139px;
+    top: 127px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Regular;
-    font-size: 16px;
+    font-size: 14px;
     opacity: 1;
     text-align: left;
   }

@@ -6,7 +6,7 @@
   }
   .screen {
     width: 414px;
-    height: 1161px;
+    height: 1105px;
     background: rgba(250, 249, 249, 1);
     opacity: 1;
     position: absolute;
@@ -26,7 +26,7 @@
   }
   #comboboxs {
     position: absolute;
-    top: 446px;
+    top: 374px;
     left: 12%;
     font-family: 'Poppins';
     font-size: 15px;
@@ -48,7 +48,7 @@
     background: rgba(229,0,78,0.6299999952316284);
     opacity: 1;
     position: relative;
-    top: 1066px;
+    top: 1012px;
     left: 91px;
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
@@ -89,25 +89,13 @@
     border: none;
     overflow: hidden;
   }
-  .textUserName {
-    width: 238px;
-    color: rgba(154,154,154,1);
-    position: absolute;
-    top: 277px;
-    left: 66px;
-    font-family: Poppins;
-    font-weight: Medium;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-  }
   .fourthBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 349px;
+    top: 274px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -120,10 +108,9 @@
     width: 139px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 352px;
+    top: 278px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -134,7 +121,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 425px;
+    top: 351px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -147,10 +134,9 @@
     width: 202px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 428px;
+    top: 355px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -161,7 +147,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 501px;
+    top: 428px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -174,10 +160,9 @@
     width: 99px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 505px;
+    top: 432px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -188,7 +173,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 577px;
+    top: 505px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -201,10 +186,9 @@
     width: 116px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 579px;
+    top: 509px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -215,7 +199,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 653px;
+    top: 583px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -228,10 +212,9 @@
     width: 176px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 655px;
+    top: 588px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -242,7 +225,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 729px;
+    top: 662px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -255,10 +238,9 @@
     width: 107px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 732px;
+    top: 666px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -269,7 +251,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 805px;
+    top: 741px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -282,10 +264,9 @@
     width: 96px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 808px;
+    top: 744px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -296,7 +277,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 881px;
+    top: 821px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -309,10 +290,9 @@
     width: 204px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 885px;
+    top: 825px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -323,7 +303,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 957px;
+    top: 901px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -336,10 +316,9 @@
     width: 209px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 83%;
+    top: 904px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;
@@ -366,7 +345,6 @@
     top: 201px;
     left: 66px;
     font-family: Poppins;
-    font-weight: Medium;
     font-size: 14px;
     opacity: 1;
     text-align: left;

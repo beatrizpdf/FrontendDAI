@@ -20,7 +20,7 @@
     background: rgb(143 185 136 / 96%);
     opacity: 1;
     position: relative;
-    top: 1164px;
+    top: 1115px;
     left: 91px;
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
@@ -46,10 +46,10 @@
     opacity: 1;
     text-align: center;
   }
-  .thirdBox {
+  .fourthBox {
     width: 325px;
     height: 64px;
-    background: rgba(239,240,246,1);
+    background: rgb(216 216 216);
     opacity: 1;
     position: absolute;
     top: 180px;
@@ -61,21 +61,21 @@
     border: none;
     overflow: hidden;
   }
-  .textUserName {
-    width: 238px;
-    color: rgba(76,76,76);
+  .textEmail {
+    width: 139px;
+    color: rgba(154,154,154,1);
     position: absolute;
-    top: 184px;
+    top: 189px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
   }
-  .fourthBox {
+  .fifthBox {
     width: 325px;
     height: 64px;
-    background: rgb(216 216 216);
+    background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
     top: 255px;
@@ -87,18 +87,18 @@
     border: none;
     overflow: hidden;
   }
-  .textEmail {
-    width: 139px;
-    color: rgb(158 158 158);
+  .textBirthday {
+    width: 202px;
+    color: rgba(76,76,76);
     position: absolute;
-    top: 259px;
-    left: 65px;
+    top: 258px;
+    left: 66px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
   }
-  .fifthBox {
+  .sixthBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -113,18 +113,18 @@
     border: none;
     overflow: hidden;
   }
-  .textBirthday {
-    width: 202px;
-    color: rgb(158 158 158);
+  .textCity {
+    width: 99px;
+    color: rgba(76,76,76);
     position: absolute;
-    top: 334px;
+    top: 332px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
   }
-  .sixthBox {
+  .seventhBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -139,19 +139,19 @@
     border: none;
     overflow: hidden;
   }
-  .textCity {
-    width: 99px;
+  .textCounty {
+    width: 116px;
     color: rgba(76,76,76);
     position: absolute;
-    top: 411px;
+    top: 409px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
   }
-  .seventhBox {
-    width: 325px;
+  .eighthBox {
+    width: 326px;
     height: 64px;
     background: rgba(239,240,246,1);
     opacity: 1;
@@ -165,37 +165,11 @@
     border: none;
     overflow: hidden;
   }
-  .textCounty {
-    width: 116px;
-    color: rgba(76,76,76);
-    position: absolute;
-    top: 485px;
-    left: 66px;
-    font-family: Poppins;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-  }
-  .eighthBox {
-    width: 326px;
-    height: 64px;
-    background: rgba(239,240,246,1);
-    opacity: 1;
-    position: absolute;
-    top: 558px;
-    left: 46px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border: none;
-    overflow: hidden;
-  }
   .textPostalCode {
     width: 176px;
     color: rgba(76,76,76);
     position: absolute;
-    top: 561px;
+    top: 485px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -208,7 +182,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 634px;
+    top: 559px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -221,7 +195,7 @@
     width: 107px;
     color: rgba(76,76,76);
     position: absolute;
-    top: 638px;
+    top: 562px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -234,7 +208,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 710px;
+    top: 635px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -247,7 +221,7 @@
     width: 96px;
     color: rgba(76,76,76);
     position: absolute;
-    top: 714px;
+    top: 638px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -260,7 +234,7 @@
     background: rgb(216 216 216);
     opacity: 1;
     position: absolute;
-    top: 786px;
+    top: 710px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -273,7 +247,7 @@
     width: 204px;
     color: rgb(158 158 158);
     position: absolute;
-    top: 789px;
+    top: 714px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -286,7 +260,7 @@
     background: rgba(239,240,246,1);
     opacity: 1;
     position: absolute;
-    top: 899px;
+    top: 850px;
     left: 46px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -300,7 +274,7 @@
     width: 209px;
     color: rgba(76,76,76);
     position: absolute;
-    top: 901px;
+    top: 854px;
     left: 66px;
     font-family: Poppins;
     font-size: 14px;
@@ -335,83 +309,83 @@
     text-align: left;
   }
 .thirteenBoxContaCrianças {
-    width: 326px;
-    height: 64px;
-    background: rgba(239,240,246,1);
-    opacity: 1;
-    position: absolute;
-    top: 976px;
-    left: 46px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border: none;
-    overflow: hidden;
-    display: hidden;
+  width: 326px;
+  height: 64px;
+  background: rgba(239,240,246,1);
+  opacity: 1;
+  position: absolute;
+  top: 927px;
+  left: 46px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: none;
+  overflow: hidden;
+  display: hidden;
 }
 .fourteenBoxContaCrianças {
-    width: 326px;
-    height: 64px;
-    background: rgba(239,240,246,1);
-    opacity: 1;
-    position: absolute;
-    top: 1054px;
-    left: 46px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border: none;
-    overflow: hidden;
-    display: hidden;
+  width: 326px;
+  height: 64px;
+  background: rgba(239,240,246,1);
+  opacity: 1;
+  position: absolute;
+  top: 1004px;
+  left: 46px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: none;
+  overflow: hidden;
+  display: hidden;
 }
 .textNewPasswordContaCrianças {
-    width: 209px;
-    color: rgba(76,76,76);
-    position: absolute;
-    top: 978px;
-    left: 66px;
-    font-family: Poppins;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-    display: hidden;
+  width: 209px;
+  color: rgba(76,76,76);
+  position: absolute;
+  top: 930px;
+  left: 66px;
+  font-family: Poppins;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+  display: hidden;
 }
 .textConfirmNewPasswordContaCrianças {
-    width: 238px;
-    color: rgba(76,76,76);
-    position: absolute;
-    top: 1057px;
-    left: 66px;
-    font-family: Poppins;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
-    display: hidden;
+  width: 238px;
+  color: rgba(76,76,76);
+  position: absolute;
+  top: 1007px;
+  left: 66px;
+  font-family: Poppins;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+  display: hidden;
 }
 .textChangePassword {
-    width: 238px;
-    color: rgba(76,76,76);
-    position: absolute;
-    top: 864px;
-    left: 159px;
-    font-family: Poppins;
-    font-size: 14px;
-    opacity: 1;
-    text-align: left;
+  width: 238px;
+  color: rgba(76,76,76);
+  position: absolute;
+  top: 796px;
+  left: 159px;
+  font-family: Poppins;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
 }
 .checkboxContaCrianças {
-    height: 28px;
-    width: 88px;
-    color: rgb(228 228 228);
-    position: absolute;
-    top: 856px;
-    left: 305px;
-    font-family: Poppins;
-    font-size: 16px;
-    opacity: 1;
-    text-align: left;
+  height: 28px;
+  width: 88px;
+  color: rgb(228 228 228);
+  position: absolute;
+  top: 789px;
+  left: 305px;
+  font-family: Poppins;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
 }
 #buttonbackContaCrianças {
   position: absolute;

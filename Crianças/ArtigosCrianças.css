@@ -6,7 +6,7 @@
   }
   .screen {
     width: 414px;
-    height: 736px;
+    height: 1586px;
     background: rgba(250, 249, 249, 1);
     opacity: 1;
     position: absolute;
@@ -39,6 +39,28 @@
     font-size: 36px;
     opacity: 1;
     text-align: center;
+  }
+  .text {
+    width: 356px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 114px;
+    left: 33px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    opacity: 1;
+    text-align: justify;
+  }
+  .textOne {
+    width: 353px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 334px;
+    left: 35px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    opacity: 1;
+    text-align: justify;
   }
   #buttonbackArtigosCrianças {
     position: absolute;

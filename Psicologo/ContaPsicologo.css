@@ -6,7 +6,7 @@
   }
   .screen {
     width: 414px;
-    height: 1360px;
+    height: 1215px;
     background: rgba(250, 249, 249, 1);
     opacity: 1;
     position: absolute;
@@ -20,7 +20,7 @@
     background: rgb(143 185 136 / 96%);
     opacity: 1;
     position: relative;
-    top: 1272px;
+    top: 1134px;
     left: 91px;
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
@@ -254,7 +254,7 @@
     opacity: 1;
     text-align: left;
   }
-  .twelfthBoxContaFamilias {
+  .twelfthBoxContaPsicologo {
     width: 326px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -270,7 +270,7 @@
     overflow: hidden;
     display: hidden;
   }
-  .textConfirmContaFamilias {
+  .textConfirmContaPsicologo {
     width: 209px;
     color: rgba(76,76,76);
     position: absolute;
@@ -308,7 +308,7 @@
     opacity: 1;
     text-align: left;
   }
-.thirteenBoxContaFamilias {
+.thirteenBoxContaPsicologo {
   width: 326px;
   height: 64px;
   background: rgba(239,240,246,1);
@@ -324,7 +324,7 @@
   overflow: hidden;
   display: hidden;
 }
-.fourteenBoxContaFamilias {
+.fourteenBoxContaPsicologo {
   width: 326px;
   height: 64px;
   background: rgba(239,240,246,1);
@@ -340,7 +340,7 @@
   overflow: hidden;
   display: hidden;
 }
-.textNewPasswordContaFamilias {
+.textNewPasswordContaPsicologo {
   width: 209px;
   color: rgba(76,76,76);
   position: absolute;
@@ -352,7 +352,7 @@
   text-align: left;
   display: hidden;
 }
-.textConfirmNewPasswordContaFamilias {
+.textConfirmNewPasswordContaPsicologo {
   width: 238px;
   color: rgba(76,76,76);
   position: absolute;
@@ -363,17 +363,6 @@
   opacity: 1;
   text-align: left;
   display: hidden;
-}
-.textExplicacao {
-  width: 305px;
-  color: rgba(76,76,76);
-  position: absolute;
-  top: 1103px;
-  left: 64px;
-  font-family: Poppins;
-  font-size: 14px;
-  opacity: 1;
-  text-align: left;
 }
 .textChangePassword {
   width: 238px;
@@ -386,7 +375,7 @@
   opacity: 1;
   text-align: left;
 }
-.checkboxContaFamilias {
+.checkboxContaPsicologo {
   height: 28px;
   width: 88px;
   color: rgb(228 228 228);
@@ -398,14 +387,7 @@
   opacity: 1;
   text-align: left;
 }
-.textarea {
-  width: 298px;
-  height: 81px;
-  top: 1155px;
-  left: 64px;
-  position: absolute;
-}
-#buttonbackContaFamilias {
+#buttonbackContaPsicologo {
   position: absolute;
   top: 46px;
   left: 32px;

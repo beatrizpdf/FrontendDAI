@@ -37,7 +37,7 @@
     opacity: 1;
     text-align: center;
   }
-  .firstBox {
+  .emailBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -63,7 +63,7 @@
     opacity: 1;
     text-align: left;
   }
-  .secondBox {
+  .passwordBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);

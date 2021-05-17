@@ -8,7 +8,7 @@ const $ = q => {
 
 
 //Altera o id confirmar para o correspondente do butao da pagina
-$('#confirm').addEventListener('click', function () {
+$('#buttonConta').addEventListener('click', function () {
     saveData();
 });
 
@@ -17,16 +17,16 @@ function saveData() {
 
     //So precisas de alterar os estes paramentros
     let dataFamily = {
-        "email": $('#email').value,
-        "password": $('#pwd').value,
-        "confirmPassword": $('#checkPwd').value,
-        "name": $('#name').value,
-        "birthDate": $('#birthDay').value,
-        "phoneNr": $('#phoneNr').value,
-        "city": $('#city').value,
+        "email": $('#emailBox').value,
+        "password": $('#thirteenBoxContaFamilias').value,
+        "confirmPassword": $('#fourteenBoxContaFamilias').value,
+        "name": $('#nameBox').value,
+        "birthDate": $('#birthBox').value,
+        "phoneNr": $('#phoneNumberBox').value,
+        "city": $('#cityBox').value,
         "county": $('#country').value,
-        "postalCode": $('#postalCode').value,
-        "address": $('#adress').value,
+        "postalCode": $('#countyBox').value,
+        "address": $('#adressBox').value,
         "role": { "idRole": 3 }
     }
 

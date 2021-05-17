@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .buttonDelete {
+    width: 140px;
+    height: 46px;
+    background: rgb(224 139 218);
+    opacity: 1;
+    position: relative;
+    top: 111px;
+    left: 138px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .textDelete {
+    width: 311px;
+    color: rgb(251 251 251);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
+  .textMateriais {
+    width: 202px;
+    color: rgb(232 163 227);
+    position: absolute;
+    top: 44px;
+    left: 106px;
+    font-family: Roboto;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  #buttonbackMateriaisProChild {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    border: none;
+    font-size: x-large;
+    color: lightgray;
+    background-color: rgba(250, 249, 249, 1);
+}

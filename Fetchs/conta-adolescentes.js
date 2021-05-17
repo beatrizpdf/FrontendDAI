@@ -8,17 +8,17 @@ const $ = q => {
   
   fetch.getData('teenagers/' + sessionStorage.getItem("id_user")).then(data => {
     console.log(data)
-    $('#email').value = data.login.email
-    $('#pwd').value = data.password
-    $('#checkPwd').value = data.confirmPassword
-    $('#name').value = data.name  
-    $('#birthDay').value = getDateFormat(data.birthDate)
-    $('#phoneNr').value = data.phoneNr
-    $('#city').value = data.city
-    $('#country').value = data.county
-    $('#postalCode').value = data.postalCode
-    $('#adress').value = data.address
-    $('#school').value = data.school
+    $('#emailBox').value = data.login.email
+    $('#thirteenBoxContaCrianças').value = data.password
+    $('#fourteenBoxContaCrianças').value = data.confirmPassword
+    $('#nameBox').value = data.name  
+    $('#birthBox').value = getDateFormat(data.birthDate)
+  //  $('#phoneNr').value = data.phoneNr
+    $('#cityBox').value = data.city
+    $('#countyBox').value = data.county
+    $('#postalCodeBox').value = data.postalCode
+    $('#adressBox').value = data.address
+    $('#schoolBox').value = data.school
   })
   
   

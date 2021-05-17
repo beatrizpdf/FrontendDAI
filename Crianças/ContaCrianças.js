@@ -20,7 +20,7 @@ function checkboxCheckedContaCrianças() {
         document.getElementById("fourteenBoxContaCrianças").className = "fourteenBoxContaCrianças";
         document.getElementById("textConfirmNewPasswordContaCrianças").className = "textConfirmNewPasswordContaCrianças";
         
-        document.getElementById("eleventhBoxContaCrianças").style.background = "#EFF0F6";
+        document.getElementById("passwordBoxContaCriancas").style.background = "#EFF0F6";
         document.getElementById("textChoosePasswordContaCrianças").style.color = "#4C4C4C";
 
         if ((document.getElementById("checkboxContaCrianças").checked==false)){
@@ -33,7 +33,7 @@ function checkboxCheckedContaCrianças() {
         document.getElementById("fourteenBoxContaCrianças").className = "hidden";
         document.getElementById("textConfirmNewPasswordContaCrianças").className = "hidden";
         
-        document.getElementById("eleventhBoxContaCrianças").style.background = "#D8D8D9";
+        document.getElementById("passwordBoxContaCriancas").style.background = "#D8D8D9";
         document.getElementById("textChoosePasswordContaCrianças").style.color = "#9e9e9e";    
         }
 }

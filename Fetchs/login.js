@@ -8,7 +8,7 @@ const $ = q => {
 
 
 //Altera o id confirmar para o correspondente do butao da pagina
-$('#btnlogin').addEventListener('click', function () {
+$('#buttonIniciar').addEventListener('click', function () {
     saveData();
 });
 
@@ -17,8 +17,8 @@ function saveData() {
 
     // So precisas de alterar os estes paramentros
     let credenciais = {
-        "email": $('#username').value,
-        "password": $('#pwd1').value,
+        "email": $('#emailBox').value,
+        "password": $('#passwordBox').value,
     }
 
     

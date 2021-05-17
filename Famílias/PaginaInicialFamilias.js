@@ -1,4 +1,4 @@
-const variavel=document.getElementById("firstGraySquarePaginaInicialFamilias");
+const variavel=document.getElementById("buttonMateriaisPaginaInicialFamilias");
 variavel.onclick=dadosfirstsquare;
 
 const variavelone=document.getElementById("secondGraySquarePaginaInicialFamilias");
@@ -18,6 +18,14 @@ variavelsix.onclick=dadosmenu;
 
 const variavelseven=document.getElementById("roseRectanglePaginaInicialFamilias");
 variavelseven.onclick=roserectangle;
+
+const variaveleight=document.getElementById("closeX");
+variaveleight.onclick=fechardenuncia;
+
+const variavelnine=document.getElementById("buttonDenunciaPaginaInicialFamilias");
+variavelnine.onclick=denuncia;
+
+
 
 
 function dadosfirstsquare(){
@@ -46,4 +54,12 @@ function dadosmenu(){
 
 function roserectangle(){
     window.location.href="MateriaisFamilias.html" //ao carregar no botão vai para a página "MateriaisFamilias.html"
+    }
+
+function fechardenuncia() {
+    document.getElementById("bgmodalPaginaInicialFamilias").className="hidden" //carregar no X e fechar o aviso
+}
+
+function denuncia(){
+    document.getElementById("bgmodalPaginaInicialFamilias").className = "bgmodalPaginaInicialFamilias"; 
     }

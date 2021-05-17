@@ -13,7 +13,18 @@
       <div class="screen">
          <div class="titleRectangle"></div>
          <span class="titleCriticas">Críticas</span>
+         <button id="buttonAdd" class="buttonAdd"><span class="textAdd">Adicionar</span></button>
          <button id="buttonbackCriticasAdolescentes" class="fas fa-chevron-left" onclick="goBack()"></button>
+         <!-- Modal Section-->
+         <div id="bgmodalCriticasAdolescentes" class="hidden">
+            <span class="textCriticasPopUp">Críticas</span>
+            <button id="closeX" class="closeX">X</button>
+            <span class="textTitulo">Título:</span>
+            <textarea class="textareaTitulo"></textarea>
+            <span class="textAssunto">Assunto:</span>
+            <textarea class="textareaAssunto"></textarea>
+            <button id="buttonPublicar" class="buttonPublicar">Publicar</button>
+         </div>
       </div>
       <script type="text/javascript" src="CriticasAdolescentes.js"></script>
    </body>

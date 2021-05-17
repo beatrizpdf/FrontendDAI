@@ -13,9 +13,9 @@ function goBack() { //voltar para a página anterior
 }
 
 function dadosfirstbox(){
-    window.location.href="VideosAdolescentes.html" //ao carregar no botão vai para a página "VideosCrianças.html"
+    window.location.href="VideosDireitosFamilias.html" //ao carregar no botão vai para a página "VideosCrianças.html"
 }
 
 function dadossecondbox(){
-    window.location.href="ArtigosDireitosAdolescentes.html" //ao carregar no botão vai para a página "ArtigosCrianças.html"
+    window.location.href="ArtigosDireitosFamilias.html" //ao carregar no botão vai para a página "ArtigosCrianças.html"
 }

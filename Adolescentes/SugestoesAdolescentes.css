@@ -39,6 +39,33 @@
     opacity: 1;
     text-align: center;
   }
+  .buttonAdd {
+    width: 140px;
+    height: 46px;
+    background: rgb(19 4 112 / 61%);
+    opacity: 1;
+    position: relative;
+    top: 111px;
+    left: 138px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .textAdd {
+    width: 311px;
+    color: rgb(251 251 251);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: Poppins;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+  }
   #buttonbackSugestoesAdolescentes {
     position: absolute;
     top: 46px;
@@ -47,4 +74,110 @@
     font-size: x-large;
     color: lightgray;
     background-color: rgba(250, 249, 249, 1);
+}
+#bgmodalSugestoesAdolescentes {
+  width: 342px;
+  height: 400px;
+  background: rgb(236 236 236 / 96%);
+  opacity: 1;
+  position: absolute;
+  top: 184px;
+  left: 9%;
+  border-top-left-radius: 39px;
+  border-top-right-radius: 39px;
+  border-bottom-left-radius: 39px;
+  border-bottom-right-radius: 39px;
+  font-size: 18px;
+  font-family: 'Poppins';
+  border: none;
+  box-shadow: -3px 3px 2px rgb(162 162 162 / 50%);
+}
+.textSugestoesPopUp {
+  width: 124px;
+  height: 33px;
+  color: rgb(64 64 64);
+  position: absolute;
+  top: 5%;
+  left: 33%;
+  font-family: Poppins;
+  font-size: 19px;
+  opacity: 1;
+  text-align: center;
+}
+.closeX {
+  top: 20px;
+  left: 296px;
+  position: absolute;
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgb(109 109 109);
+  border: none;
+  background: rgb(236 236 236 / 0%);
+}
+.textTitulo {
+  top: 55px;
+  left: 25px;
+  position: relative;
+  font-family: Poppins;
+  font-size: 18px;
+  color: rgba(76,76,76);
+}
+.textareaTitulo {
+  width: 286px;
+  height: 39px;
+  top: 84px;
+  left: 27px;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: lightgray;
+  font-size: 16px;
+  font-family: 'Poppins';
+  text-align: center;
+}
+.textAssunto {
+  top: 133px;
+  left: -31px;
+  position: relative;
+  font-family: Poppins;
+  font-size: 18px;
+  color: rgba(76,76,76);
+}
+.textareaAssunto {
+  width: 287px;
+  height: 144px;
+  top: 169px;
+  left: 27px;
+  position: absolute;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-color: lightgray;
+  font-size: 16px;
+  font-family: 'Poppins';
+  text-align: left;
+}
+.buttonPublicar {
+  width: 171px;
+  height: 45px;
+  background: rgb(222 222 222);
+  opacity: 1;
+  position: absolute;
+  top: 335px;
+  left: 82px;
+  border-top-left-radius: 31px;
+  border-top-right-radius: 31px;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  overflow: hidden;
+  border: none;
+  box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  font-family: 'Poppins';
+  font-size: 17px;
+}
+.hidden {
+  display: none;
 }

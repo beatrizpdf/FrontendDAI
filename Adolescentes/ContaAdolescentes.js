@@ -20,7 +20,7 @@ function checkboxCheckedContaAdolescentes() {
         document.getElementById("fourteenBoxContaAdolescentes").className = "fourteenBoxContaAdolescentes";
         document.getElementById("textConfirmNewPasswordContaAdolescentes").className = "textConfirmNewPasswordContaAdolescentes";
         
-        document.getElementById("eleventhBoxContaAdolescentes").style.background = "#EFF0F6";
+        document.getElementById("passwordBoxContaAdolescentes").style.background = "#EFF0F6";
         document.getElementById("textChoosePasswordContaAdolescentes").style.color = "#4C4C4C";
 
         if ((document.getElementById("checkboxContaAdolescentes").checked==false)){
@@ -33,7 +33,7 @@ function checkboxCheckedContaAdolescentes() {
         document.getElementById("fourteenBoxContaAdolescentes").className = "hidden";
         document.getElementById("textConfirmNewPasswordContaAdolescentes").className = "hidden";
         
-        document.getElementById("eleventhBoxContaAdolescentes").style.background = "#D8D8D9";
+        document.getElementById("passwordBoxContaAdolescentes").style.background = "#D8D8D9";
         document.getElementById("textChoosePasswordContaAdolescentes").style.color = "#9e9e9e";    
         }
 }

@@ -16,12 +16,16 @@ variavelfive.onclick=dadossixthsquare;
 const variavelsix=document.getElementById("iconmenuPaginaInicialInstituicoes");
 variavelsix.onclick=dadosmenu;
 
-const variavelseven=document.getElementById("roseRectanglePaginaInicialInstituicoes");
-variavelseven.onclick=roserectangle;
+//const variavelseven=document.getElementById("buttonDenunciaPaginaInicialInstituicoes");
+//variavelseven.onclick=denuncia;
+
+//const variaveleight=document.getElementById("closeX");
+//variaveleight.onclick=fechardenuncia;
+
 
 
 function dadosfirstsquare(){
-    window.location.href="MateriaisInstituicoes.html" //ao carregar no botão vai para a página "ChatFamilias.html"
+    window.location.href="PaginaInicialInstituicoes.html" //ao carregar no botão vai para a página "ChatFamilias.html"
 }
 
 function dadossecondsquare(){
@@ -29,7 +33,7 @@ function dadossecondsquare(){
 }
 
 function dadosthirdsquare(){
-    window.location.href="ContaInstituicoes.html" //ao carregar no botão vai para a página "ForumFamilias.html"
+    window.location.href="MateriaisInstituicoes.html" //ao carregar no botão vai para a página "ForumFamilias.html"
 }
 
 function dadosfourthsquare(){
@@ -44,6 +48,11 @@ function dadosmenu(){
     window.location.href="MenuInstituicoes.html" //ao carregar no botão vai para a página "ContaFamilias.html"
 }
 
-function roserectangle(){
-    window.location.href="Materiais~Instituicoes.html" //ao carregar no botão vai para a página "MateriaisFamilias.html"
-}
+//function denuncia(){
+    //document.getElementById("bgmodalPaginaIniciaInstituicoes").className = "bgmodalPaginaIniciaInstituicoes"; 
+    //}
+
+//function fechardenuncia() {
+    //document.getElementById("bgmodalPaginaIniciaInstituicoes").className="hidden" //carregar no X e fechar o aviso
+//}
+

@@ -18,7 +18,7 @@ fetch.getData('videorights').then(data => {
 
     }
     console.log(txt)
-    $('#videos').innerHTML = txt;
+    $('#classdivVideos').innerHTML = txt;
 });
 
 // let dataVideo = {

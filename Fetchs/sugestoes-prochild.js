@@ -1,4 +1,3 @@
-
 const urlBase = "http://localhost:8080/api/"
 
 
@@ -6,7 +5,7 @@ const urlBase = "http://localhost:8080/api/"
 
 document.getElementById('ver-sug').addEventListener('click', function () {
 
-    let selected = $("#Table-denun tr").hasClass("selected");
+    let selected = $("#Table-denun tbody tr").hasClass("selected");
     console.log(selected)
     if(selected){
         let id = sessionStorage.getItem('id_suggestion')
@@ -30,7 +29,7 @@ document.getElementById('ver-sug').addEventListener('click', function () {
 });
 
 document.getElementById('delete-sug').addEventListener('click', function () {
-    let selected = $("#Table-denun tr").hasClass("selected");
+    let selected = $("#Table-denun tbody tr").hasClass("selected");
     console.log(selected)
 
     if(selected){
@@ -40,15 +39,15 @@ document.getElementById('delete-sug').addEventListener('click', function () {
                 autocapitalize: 'off'
             },
             showCancelButton: true,
-            confirmButtonText: 'Adicionar',
+            confirmButtonText: 'Eliminar',
             cancelButtonText: 'Cancelar',
             confirmButtonColor: '#130470',
             showLoaderOnConfirm: true,
             preConfirm: () => {
                 let id = sessionStorage.getItem('id_suggestion');
-                fetch.postData('suggestions/', + id).then(response => {
-                    console.log(response.success)
-                    if (response.success) {
+                deleteData('suggestions/' + id).then(response => {
+                    console.log(response.ok)
+                    if (response.ok) {
                         Swal.fire(
                             'Eliminado com sucesso!',
                             '',
@@ -79,47 +78,6 @@ document.getElementById('delete-sug').addEventListener('click', function () {
 });
 
 
-// $("#denun").addEventListener('click', function () {
-//     alert("fewf")
-//     // let selected = $(this).hasClass("highlight");
-//     // $("#tableNot tr").removeClass("highlight");
-//     // if (!selected)
-//     //     $(this).addClass("highlight");
-
-//     // var id = $(this).closest("tr").find('td:eq(-4)').text();
-//     // console.log(id);
-// });
-
-
-// document.getElementById("deleteAuditor").addEventListener("click", function(){
-//     var selected = $("#tableAudits tr").hasClass("highlight");
-//     if(selected) {
-//     route = "audits/" + id_login;
-//     fetch.deleteData(route);
-//     refreshAudits();
-//     } else {
-//         Swal.fire("Selecione um auditor");
-//     }
-// });
-
-
-
-
-
-// function suggestion() {
-
-//     //So precisas de alterar os estes paramentros
-//     let suggestion =
-//     {
-//         "title": "Go",
-//         "suggestion": "I felt an enourmous lack of suport from the prochild institution on the last event",
-//     }
-
-//     console.log(suggestion);
-//     f.postData('suggestions', suggestion);
-// }
-
-
 getSuggestions()
 function getSuggestions() {
     getData('suggestions').then(data => {
@@ -144,9 +102,9 @@ function getSuggestions() {
             <tr>
                 <td>${data[i].idSuggestion}</td>
                 <td>${data[i].title}</td>
-                <td>Nome</td>
-                <td>Contacto</td>
-                <td>Morada</td>
+                <td>${data[i].name}</td>
+                <td>${data[i].phoneNr}</td>
+                <td>${data[i].county}</td>
                 <td>${data[i].suggestion}</td>
             </tr>
         `
@@ -157,7 +115,7 @@ function getSuggestions() {
 
         
     }).then(() => {
-        $("#Table-denun tr").click(function () {
+        $("#Table-denun tbody tr").click(function () {
             
             $(this).addClass('selected').siblings().removeClass('selected');
             var id = $(this).find('td:first').html();
@@ -178,11 +136,6 @@ async function getData(route) {
 
 
 async function deleteData(route) {
-    // fetch(urlBase + route, {
-    //     method: 'DELETE',
-    // })
-    //     .then(res => res.text())
-    //     .then(res => console.log(res))
     console.log(urlBase + route)
     const response = await fetch(urlBase + route, {
         credentials: 'include',
@@ -194,15 +147,7 @@ async function deleteData(route) {
         },
         method: 'DELETE',
     })
+    
     console.log(response)
-    const res = await response.json();
-    console.log(res)
-    return res;
+    return response;
 }
-
-
-
-
-
-
-

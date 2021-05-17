@@ -1,86 +1,76 @@
 "use strict";
-export { getData, putData, postData, deleteData };
+export { getData, postData, deleteData, postFile,putData };
 
 
-// https://dmitripavlutin.com/javascript-fetch-async-await/
-
-// const urlBase = "https://58717807e0f449edb5fcb157313592f1.vfs.cloud9.us-east-1.amazonaws.com/"
-// const urlBase = "https://660274fa4a8a48228a25454f70ccac83.vfs.cloud9.us-east-1.amazonaws.com/"
 const urlBase = "http://localhost:8080/api/"
 
 async function getData(route) {
     const response = await fetch(urlBase + route);
 
-    if (!response.ok) {
-        const message = `An error has occured: ${response.status}`;
-        throw new Error(message);
-    }
-    
     const data = await response.json();
     return data;
 }
 
 
-function postData(route, data) {
+async function postData(route, data) {
     console.log(urlBase + route)
-    fetch(urlBase + route, {
-        headers: { 'Accept': 'application/json',
-            'Content-Type': 'application/json'
+    const response = await fetch(urlBase + route, {
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + sessionStorage.getItem("accessToken"),
+            'Cookie': 'token=' + sessionStorage.getItem("accessToken")
         },
         method: 'POST',
         body: JSON.stringify(data)
-    }).then(function(response) {
-        if (!response.ok) {
-            console.log(response.status); //=> number 100–599
-            console.log(response.statusText); //=> String
-            console.log(response.headers); //=> Headers
-            console.log(response.url); //=> String
-            if (response.status === 409) {
-                alert("Duplicado!");
-            }
-            else {
-                throw Error(response.statusText);
-            }
-        }
-        else {
-            alert("Submetido com sucesso");
-        }
-    }).then(function(result) {
-        console.log(result);
-    }).catch(function(err) {
-        alert("Erro de submissão");
-        console.error(err);
-    });
+    })
+
+    return response;
 }
 
-function deleteData(route) {
-    fetch(urlBase + route, {
-            method: 'DELETE',
-        })
-        .then(res => res.text()) // or res.json()
-        .then(res => console.log(res))
-}
-
-function putData(route, data) {
-    fetch(urlBase + route, {
-        headers: { 'Accept': 'application/json',
-            'Content-Type': 'application/json' },
+async function putData(route, data) {
+    console.log(urlBase + route)
+    const response = await fetch(urlBase + route, {
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + sessionStorage.getItem("accessToken"),
+            'Cookie': 'token=' + sessionStorage.getItem("accessToken")
+        },
         method: 'PUT',
         body: JSON.stringify(data)
-    }).then(function(response) {
-        if (!response.ok) {
-            console.log(response.status); //=> number 100–599
-            console.log(response.statusText); //=> String
-            console.log(response.headers); //=> Headers
-            console.log(response.url); //=> String
-        }
-        else {
-            alert("Submetido com sucesso");
-        }
-    }).then(function(result) {
-        console.log(result);
-    }).catch(function(err) {
-        alert("Erro de submissão");
-        console.error(err);
-    });
+    })
+
+    return response;
+}
+
+
+async function postFile(route, data){
+    console.log(urlBase + route)
+    const response = await fetch(urlBase + route, {
+        method: 'POST',
+        body: data
+    })
+
+    console.log(response)
+   
+    return response;
+}
+
+async function deleteData(route) {
+    console.log(urlBase + route)
+    const response = await fetch(urlBase + route, {
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + sessionStorage.getItem("accessToken"),
+            'Cookie': 'token=' + sessionStorage.getItem("accessToken")
+        },
+        method: 'DELETE',
+    })
+    console.log(response)
+    return response;
 }

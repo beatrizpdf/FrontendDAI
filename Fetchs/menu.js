@@ -12,7 +12,7 @@ let id = sessionStorage.getItem("id_user");
 console.log(typeUser)
 fetch.getData(typeUser + "/" + id).then(data => {
     console.log(data)
-    $('#tituloMenuChild').innerHTML = `Olá ${data.name} !`
+    $('#textName').innerHTML = `Olá ${data.name} !`
 
 })
 

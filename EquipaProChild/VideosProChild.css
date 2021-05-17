@@ -12,12 +12,17 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    overflow: hidden;
+    overflow: auto;
   }
-  .classdiv {
-    width: 50%;
-    height: 40%;
-    position:relative;
+  .classdivVideos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 199px;
+    left: 107px;
+    position: absolute;
+    width: 205px;
+    height: 276px;
   }
   /*.firstRectangleVideo {
     width: 340px;

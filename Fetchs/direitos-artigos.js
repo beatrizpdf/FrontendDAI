@@ -27,7 +27,7 @@ $('#buttonPublicar').addEventListener('click', function () {
         showLoaderOnConfirm: true,
         preConfirm: () => {
             let data = {
-                "rights": $('#txtRight').value
+                "rights": $('#textareaArtigos').value
             };
             fetch.postData('rights', data).then(response => {
                 console.log(response.success)
@@ -94,7 +94,7 @@ function getRights(){
         }
         txt += '<br><br></div>'
         console.log(txt)
-        $('#direitos').innerHTML = txt;
+        $('#classdivArtigos').innerHTML = txt;
     });
     }
 

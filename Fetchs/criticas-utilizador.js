@@ -1,10 +1,9 @@
-
 const urlBase = "http://localhost:8080/api/"
 
 
 document.getElementById('ver-critica').addEventListener('click', function () {
 
-    let selected = $("#Table-denun tbody tr").hasClass("selected");
+    let selected = $("#Table-denun tr").hasClass("selected");
     console.log(selected)
     if(selected){
         let id = sessionStorage.getItem('id_complaint')
@@ -27,57 +26,18 @@ document.getElementById('ver-critica').addEventListener('click', function () {
     
 });
 
-document.getElementById('delete-critica').addEventListener('click', function () {
-    let selected = $("#Table-denun tbody tr").hasClass("selected");
-    console.log(selected)
 
-    if(selected){
-        Swal.fire({
-            title: 'Tens a certeza?',
-            inputAttributes: {
-                autocapitalize: 'off'
-            },
-            showCancelButton: true,
-            confirmButtonText: 'Eliminar',
-            cancelButtonText: 'Cancelar',
-            confirmButtonColor: '#130470',
-            showLoaderOnConfirm: true,
-            preConfirm: () => {
-                let id = sessionStorage.getItem('id_complaint');
-                deleteData('suggestions/' + id).then(response => {
-                    console.log(response.ok)
-                    if (response.ok) {
-                        Swal.fire(
-                            'Eliminado com sucesso!',
-                            '',
-                            'success'
-                        ).then((result) => {
-                            if (result.value) {
-                                getSuggestions()
-                            }
-                        })
-                    } else {
-                        Swal.fire(
-                            'Não foi possível eliminar!',
-                            '',
-                            'error'
-                        )
-                    }
-                })
-            }
-        });
-    } else {
+document.getElementById('add-denun').addEventListener('click', function () {
+    if(document.getElementById('email3').value.trim() == '' && document.getElementById('descricao').value.trim()==''){
         Swal.fire(
-            'Seleciona uma linha!',
+            'Preencha todos os campos',
             '',
             'error'
         )
+    } else {
+    saveData()
     }
-    
 });
-
-
-
 
 getSuggestions()
 function getSuggestions() {
@@ -90,7 +50,6 @@ function getSuggestions() {
                 <th style="display:none">ID</th>
                 <th>Titulo</th>
                 <th>Nome</th>
-                <th>Contacto</th>
                 <th>Morada</th>
                 <th>Conteúdo</th>
             </tr>
@@ -102,9 +61,8 @@ function getSuggestions() {
             txt += `
             <tr>
                 <td style="display:none">${data[i].idComplaint}</td>
+                <td>${data[i].title}</td>
                 <td>${data[i].name}</td>
-                <td>${data[i].phoneNr}</td>
-                <td>${data[i].postalCode}</td>
                 <td>${data[i].county}</td>
                 <td>${data[i].complaint}</td>
             </tr>
@@ -113,19 +71,50 @@ function getSuggestions() {
         txt += '</tbody></table>'
         console.log(txt)
         $('#dataTable_wrapper').html(txt);
-
         
     }).then(() => {
         $("#Table-denun tbody tr").click(function () {
-            
             $(this).addClass('selected').siblings().removeClass('selected');
             var id = $(this).find('td:first').html();
-            sessionStorage.setItem('id_suggestion', id)
+            sessionStorage.setItem('id_complaint', id)
         });
     })
 
 }
 
+
+function saveData() {
+    let complaint =
+    {
+        "title": document.getElementById('email3').value.trim(),
+        "complaint": document.getElementById('descricao').value.trim(),
+    }
+
+    console.log(complaint);
+    postData('complaints', complaint).then(response => {
+        console.log(response)
+        
+        if(response.ok){
+            Swal.fire(
+                'Submetido com sucesso',
+                '',
+                'success'
+            ).then((result) => {
+                if (result.value) {
+                    document.getElementById('email3').value = ''
+                    document.getElementById('descricao').value = ''
+                    getSuggestions()
+                }
+            })
+        } else {
+            Swal.fire(
+                'Erro de submissao',
+                '',
+                'error'
+            )
+        }
+    });
+}
 
 async function getData(route) {
     const response = await fetch(urlBase + route);
@@ -136,8 +125,8 @@ async function getData(route) {
 
 
 
-async function deleteData(route) {
 
+async function postData(route, data) {
     console.log(urlBase + route)
     const response = await fetch(urlBase + route, {
         credentials: 'include',
@@ -147,10 +136,30 @@ async function deleteData(route) {
             'Authorization': 'Bearer ' + sessionStorage.getItem("accessToken"),
             'Cookie': 'token=' + sessionStorage.getItem("accessToken")
         },
-        method: 'DELETE',
+        method: 'POST',
+        body: JSON.stringify(data)
     })
+
     console.log(response)
     const res = await response.json();
     console.log(res)
     return res;
 }
+
+async function postData(route, data) {
+    console.log(urlBase + route)
+    const response = await fetch(urlBase + route, {
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + sessionStorage.getItem("accessToken"),
+            'Cookie': 'token=' + sessionStorage.getItem("accessToken")
+        },
+        method: 'POST',
+        body: JSON.stringify(data)
+    })
+
+    return response;
+}
+

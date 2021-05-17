@@ -24,8 +24,8 @@ $('#buttonAdd').addEventListener('click', function () {
                 "linkVideo": $('#txtLink').value
             };
             fetch.postData('videorights', data).then(response => {
-                console.log(response.success)
-                if (response.success) {
+                console.log(response.ok)
+                if (response.ok) {
                     Swal.fire(
                         'Adionado com sucesso!',
                         '',

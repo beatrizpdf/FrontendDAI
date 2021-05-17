@@ -17,16 +17,16 @@ function saveData(){
 
     //So precisas de alterar os estes paramentros
     let prochild =  {
-        "email": $('#email').value,
-        "password":$('#pwd').value,
-        "confirmPassword":$('#checkPwd').value,
-        "name":$('#name').value,
-        "birthDate":$('#birthDay').value,
-        "phoneNr": $('#phoneNr').value,
-        "city":$('#city').value,
-        "county": $('#country').value,
-        "postalCode":$('#postalCode').value,
-        "address":$('#adress').value,
+      "email": $('#emailBox').value,
+      "password": $('#thirteenBoxContaFamilias').value,
+      "confirmPassword": $('#fourteenBoxContaFamilias').value,
+      "name": $('#nameBox').value,
+      "birthDate": $('#birthBox').value,
+      "phoneNr": $('#phoneNumberBox').value,
+      "city": $('#cityBox').value,
+      "county": $('#countyBox').value,
+      "postalCode": $('#postalCodeBox').value,
+      "address": $('#adressBox').value,
         "role": {"idRole": 5}
         }
       console.log(prochild);

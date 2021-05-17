@@ -24,8 +24,8 @@ function saveData() {
         "birthDate": $('#birthBox').value,
         "phoneNr": $('#phoneNumberBox').value,
         "city": $('#cityBox').value,
-        "county": $('#country').value,
-        "postalCode": $('#countyBox').value,
+        "county": $('#countyBox').value,
+        "postalCode": $('#postalCodeBox').value,
         "address": $('#adressBox').value,
         "role": { "idRole": 3 }
     }

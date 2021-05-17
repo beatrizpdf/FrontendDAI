@@ -14,6 +14,11 @@
     left: 0px;
     overflow: hidden;
   }
+  .classdiv {
+    width: 50%;
+    height: 40%;
+    position:relative;
+  }
   /*.firstRectangleVideo {
     width: 340px;
     height: 237px;

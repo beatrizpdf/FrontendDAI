@@ -12,11 +12,14 @@
    </head>
    <body>
       <div class="screen">
+         <!-- sweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <div id="divMateriais" class="divMateriais"></div>
         <span class="textMateriais">Materiais</span>
         <button id="buttonDelete" class="buttonDelete"><span class="textDelete">Eliminar</span></button>
         <button id="buttonbackMateriaisProChild" class="fas fa-chevron-left" onclick="goBack()"></button>
       </div>
       <script type="text/javascript" src="MateriaisProChild.js"></script>
-      <script type="text/javascript" src="../Fetchs/materiais-prochild.js"></script>
+      <script type="module" src="../Fetchs/materiais-prochild.js"></script>
    </body>
 </html>

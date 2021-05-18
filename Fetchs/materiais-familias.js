@@ -16,12 +16,12 @@ function getMateriais() {
             console.log(addAPIToUrl(data[i]))
             let img = addAPIToUrl(data[i])
 
-            txt += '<div class="col-md-6"><img width="500" style="margin:10px; border-radius:10px;" src="' + img + '"></div>'
+            txt += '<div class="col-md-6"><img width="200" style="margin:10px; border-radius:10px;" src="' + img + '"></div>'
         }
         console.log(txt)
 
 
-        $('#images').innerHTML = txt;
+        $('#divMateriaisFamilias').innerHTML = txt;
     });
 }
 
@@ -29,14 +29,14 @@ function getMateriais() {
 
 
 
-$('#file').addEventListener("change", function () {
-    console.log($('#file').files);
-})
+// $('#file').addEventListener("change", function () {
+//     console.log($('#file').files);
+// })
 
 
 
 
-$('#addFile').addEventListener("click", e => {
+$('#buttonAdd').addEventListener("click", e => {
 
     e.preventDefault();
 

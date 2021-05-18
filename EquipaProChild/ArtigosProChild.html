@@ -11,13 +11,16 @@
    </head>
    <body>
       <div class="screen">
+         <!-- sweetAlert2 -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
          <div class="titleRectangle"></div>
          <span class="titleArtigos">Artigos</span>
          <button id="buttonDelete" class="buttonDelete"><span class="textDelete">Eliminar</span></button>
          <button id="buttonAdd" class="buttonAdd"><span class="textAdd">Adicionar</span></button>
          <button id="buttonbackArtigosProChild" class="fas fa-chevron-left" onclick="goBack()"></button>
+         <div id="divArtigos" class="divArtigos"></div>
          <!-- Modal Section-->
-         <div id="bgmodalArtigosProChild" class="hidden">
+         <!-- <div id="bgmodalArtigosProChild" class="hidden">
             <span class="textArtigosPopUp">Artigos</span>
             <button id="closeX" class="closeX">X</button>
             <span class="textTitulo">Título:</span>
@@ -25,8 +28,9 @@
             <span class="textAssunto">Assunto:</span>
             <textarea class="textareaAssunto"></textarea>
             <button id="buttonPublicar" class="buttonPublicar">Publicar</button>
-         </div>
+         </div> -->
       </div>
       <script type="text/javascript" src="ArtigosProChild.js"></script>
+      <script type="module" src="../Fetchs/forum-prochild.js"></script>
    </body>
 </html>

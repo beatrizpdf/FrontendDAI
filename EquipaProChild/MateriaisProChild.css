@@ -12,7 +12,26 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    overflow: hidden;
+    overflow: auto;
+  }
+  .divMateriais {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'POPPINS';
+    font-size: 15px;
+    top: 181px;
+    left: 88px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+  }
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 285px;
   }
   .buttonDelete {
     width: 140px;

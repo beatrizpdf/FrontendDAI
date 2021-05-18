@@ -8,7 +8,7 @@ const $ = q => {
 };
 
 
-$('#addArticle').addEventListener('click', function () {
+$('#buttonAdd').addEventListener('click', function () {
     Swal.fire({
         title: 'Adicionar artigo',
         inputAttributes: {
@@ -51,7 +51,7 @@ $('#addArticle').addEventListener('click', function () {
     });
 });
 
-$('#deleteArticle').addEventListener('click', function () {
+$('#buttonDelete').addEventListener('click', function () {
 
     fetch.getData('articles').then(data => {
         console.log(data)
@@ -128,6 +128,6 @@ function getArticle() {
                 `
         }
         console.log(txt)
-        $('#articles').innerHTML = txt;
+        $('#divArtigos').innerHTML = txt;
     });
 }

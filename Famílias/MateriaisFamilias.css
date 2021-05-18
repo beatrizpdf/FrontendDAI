@@ -12,7 +12,19 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  overflow: hidden;
+  overflow: auto;
+}
+.divMateriaisFamilias {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-family: 'POPPINS';
+  font-size: 15px;
+  top: 181px;
+  left: 88px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
 }
 .buttonAdd {
   width: 140px;

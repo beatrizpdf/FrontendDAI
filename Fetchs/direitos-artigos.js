@@ -13,7 +13,7 @@ const onClick = (q, func) => {
 getRights()
 
 
-$('#buttonPublicar').addEventListener('click', function () {
+$('#buttonAdd').addEventListener('click', function () {
     Swal.fire({
         title: 'Adicionar frase do direito',
         inputAttributes: {
@@ -27,11 +27,11 @@ $('#buttonPublicar').addEventListener('click', function () {
         showLoaderOnConfirm: true,
         preConfirm: () => {
             let data = {
-                "rights": $('#textareaArtigos').value
+                "rights": $('#txtRight').value
             };
             fetch.postData('rights', data).then(response => {
-                console.log(response.success)
-                if (response.success) {
+                console.log(response.ok)
+                if (response.ok) {
                     Swal.fire(
                         'Adionado com sucesso!',
                         '',

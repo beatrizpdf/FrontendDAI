@@ -6,7 +6,7 @@ const $ = q => {
 
 
 //Altera o id confirmar para o correspondente do butao da pagina
-$('#confirm').addEventListener('click', function () {
+$('#buttonDenunciar').addEventListener('click', function () {
     saveData();
 });
 
@@ -15,8 +15,8 @@ function saveData() {
 
     //So precisas de alterar os estes paramentros
     let denounce = {
-        "title":$('#titulo').value,
-        "description": $('#descricao').value
+        "title":$('#textareaTitulo').value,
+        "description": $('#textareaAssunto').value
     }
 
     // let denounce = {

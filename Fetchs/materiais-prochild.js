@@ -29,44 +29,44 @@ function getMateriais() {
 
 
 
-// $('#file').addEventListener("change", function () {
-//     console.log($('#file').files);
-// })
+$('#file').addEventListener("change", function () {
+    console.log($('#file').files);
+})
 
 
 
 
-// $('#addFile').addEventListener("click", e => {
+$('#addFile').addEventListener("click", e => {
 
-//     e.preventDefault();
+    e.preventDefault();
 
-//     const formData = new FormData();
+    const formData = new FormData();
 
-//     console.log($('#file').files);
+    console.log($('#file').files);
 
-//     formData.append("file", $('#file').files[0]);
+    formData.append("file", $('#file').files[0]);
 
-//     fetch.postFile('upload', formData).then(response => {
-//         if (response.ok) {
-//             Swal.fire(
-//                 'Material adicionado com successo',
-//                 '',
-//                 'success'
-//             ).then((result) => {
-//                 if (result.value) {
-//                     getMateriais()
-//                 }
-//             })
+    fetch.postFile('upload', formData).then(response => {
+        if (response.ok) {
+            Swal.fire(
+                'Material adicionado com successo',
+                '',
+                'success'
+            ).then((result) => {
+                if (result.value) {
+                    getMateriais()
+                }
+            })
 
-//         } else {
-//             Swal.fire(
-//                 'Não foi possível adicionar o material',
-//                 '',
-//                 'error'
-//             )
-//         }
-//     })
-// })
+        } else {
+            Swal.fire(
+                'Não foi possível adicionar o material',
+                '',
+                'error'
+            )
+        }
+    })
+})
 
 
 $('#buttonDelete').addEventListener("click", e => {

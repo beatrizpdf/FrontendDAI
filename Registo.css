@@ -14,7 +14,7 @@
     left: 0px;
     overflow: auto;
   }
-  #anotherCombobox {
+  #comboboxSou {
     position: absolute;
     top: 151px;
     left: 17%;
@@ -68,11 +68,10 @@
     color: rgb(216 214 214);
     position: absolute;
     top: 51px;
-    left: 38.5%;
+    left: 37.5%;
     font-family: Roboto;
     font-size: 33px;
     opacity: 1;
-    text-align: left;
   }
   .thirdBox {
     width: 325px;
@@ -88,8 +87,9 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
-  .fourthBox {
+  .emailBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -103,6 +103,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textEmail {
     width: 139px;
@@ -115,7 +116,7 @@
     opacity: 1;
     text-align: left;
   }
-  .fifthBox {
+  .birthBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -129,6 +130,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textBirthday {
     width: 202px;
@@ -141,7 +143,7 @@
     opacity: 1;
     text-align: left;
   }
-  .sixthBox {
+  .cityBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -155,6 +157,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textCity {
     width: 99px;
@@ -167,7 +170,7 @@
     opacity: 1;
     text-align: left;
   }
-  .seventhBox {
+  .countyBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -181,6 +184,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textCounty {
     width: 116px;
@@ -193,7 +197,7 @@
     opacity: 1;
     text-align: left;
   }
-  .eighthBox {
+  .postalCodeBox {
     width: 326px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -207,6 +211,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textPostalCode {
     width: 176px;
@@ -219,7 +224,7 @@
     opacity: 1;
     text-align: left;
   }
-  .ninthBox {
+  .addressBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -233,6 +238,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textAddress {
     width: 107px;
@@ -245,7 +251,7 @@
     opacity: 1;
     text-align: left;
   }
-  .tenthBox {
+  .schoolBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -259,6 +265,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textSchool {
     width: 96px;
@@ -271,7 +278,46 @@
     opacity: 1;
     text-align: left;
   }
-  .eleventhBox {
+  .hiddenS {
+    display: block;
+  }
+  .hiddenE {
+    display: block;
+  }
+  .phoneNumberBox {
+    width: 325px;
+    height: 64px;
+    background: rgba(239,240,246,1);
+    opacity: 1;
+    position: absolute;
+    top: 741px;
+    left: 46px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border: none;
+    overflow: hidden;
+    text-align: center;
+  }
+  .textPhoneNumber {
+    width: 179px;
+    color: rgba(154,154,154,1);
+    position: absolute;
+    top: 744px;
+    left: 66px;
+    font-family: Poppins;
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+  .hiddenPn {
+    display: block;
+  }
+  .hiddenNt {
+    display: block;
+  }
+  .passwordBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -285,6 +331,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textChoosePassword {
     width: 204px;
@@ -297,7 +344,7 @@
     opacity: 1;
     text-align: left;
   }
-  .twelfthBox {
+  .confirmPasswordBox {
     width: 326px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -311,6 +358,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textConfirm {
     width: 209px;
@@ -323,7 +371,7 @@
     opacity: 1;
     text-align: left;
   }
-  .secondBox {
+  .nameBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -337,6 +385,7 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .textName {
     width: 90px;
@@ -349,7 +398,7 @@
     opacity: 1;
     text-align: left;
   }
-  .firstBox {
+  .euSouBox {
     width: 325px;
     height: 64px;
     background: rgba(239,240,246,1);
@@ -363,15 +412,93 @@
     border-bottom-right-radius: 16px;
     border: none;
     overflow: hidden;
+    text-align: center;
   }
   .text {
     width: 68px;
     color: rgba(154,154,154,1);
     position: absolute;
-    top: 127px;
-    left: 66px;
+    top: 4px;
+    left: 22px;
     font-family: Poppins;
     font-size: 14px;
     opacity: 1;
     text-align: left;
   }
+  .bgmodal {
+    width: 86%;
+    height: 25%;
+    background-color: rgba(235, 235, 235, 94);
+    position: absolute;
+    top: 273px;
+    left: 30px;
+    display: flex;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: -15px 15px 10px lightgrey;
+}
+
+.buttonLoginRegisto {
+    width: 149px;
+    height: 46px;
+    background: rgb(225, 225, 225, 88);
+    opacity: 1;
+    position: absolute;
+    top: 118px;
+    left: 8%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-size: 18px;
+    border: none;
+    font-family: 'Poppins';
+    box-shadow: -3px 3px 2px rgb(162 162 162 / 50%);
+}
+
+.buttonInicioRegisto {
+    width: 149px;
+    height: 45px;
+    background: rgb(225, 225, 225, 88);
+    opacity: 1;
+    position: absolute;
+    top: 118px;
+    left: 52%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    border: none;
+    box-shadow: -3px 3px 2px rgb(162 162 162 / 50%);
+}
+
+.welcome {
+    width: 191px;
+    height: 103px;
+    color: rgba(110, 113, 145, 1);
+    position: absolute;
+    top: 19%;
+    left: 25%;
+    font-family: Poppins;
+    font-size: 17px;
+    opacity: 1;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.close {
+    width: 61px;
+    height: 53px;
+    position: absolute;
+    left: 294px;
+    border: none;
+    color: black;
+    background: rgba(235, 235, 235, 94);
+}

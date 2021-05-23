@@ -7,7 +7,7 @@ const $ = q => {
 };
 
 
-//Altera o id confirmar para o correspondente do butao da pagina
+//Altera o id confirmar para o correspondente do botao da pagina
 $('#confirm').addEventListener('click', function () {
     saveData();
 });

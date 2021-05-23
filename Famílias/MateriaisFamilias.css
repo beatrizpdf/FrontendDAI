@@ -20,7 +20,7 @@ body {
   text-align: justify;
   font-family: 'POPPINS';
   font-size: 15px;
-  top: 181px;
+  top: 226px;
   left: 88px;
   position: absolute;
   width: 10px;
@@ -32,8 +32,8 @@ body {
   background: rgb(224 139 218);
   opacity: 1;
   position: relative;
-  top: 111px;
-  left: 139px;
+  top: 160px;
+  left: 40px;
   border-top-left-radius: 31px;
   border-top-right-radius: 31px;
   border-bottom-left-radius: 31px;
@@ -43,6 +43,32 @@ body {
   box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
 }
 .textAdd {
+  width: 311px;
+  color: rgb(251 251 251);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Poppins;
+  font-size: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.adicionarMaterial {
+  width: 326px;
+  height: 64px;
+  background: rgba(250, 249, 249, 1);
+  opacity: 1;
+  position: absolute;
+  top: 119px;
+  left: 46px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: none;
+  overflow: hidden;
+}
+.textAdicionar {
   width: 311px;
   color: rgb(251 251 251);
   position: relative;

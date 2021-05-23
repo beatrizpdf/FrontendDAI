@@ -29,9 +29,9 @@ function getMateriais() {
 
 
 
-// $('#file').addEventListener("change", function () {
-//     console.log($('#file').files);
-// })
+$('#adicionarMaterial').addEventListener("change", function () {
+    console.log($('#adicionarMaterial').files);
+})
 
 
 
@@ -42,9 +42,9 @@ $('#buttonAdd').addEventListener("click", e => {
 
     const formData = new FormData();
 
-    console.log($('#file').files);
+    console.log($('#adicionarMaterial').files);
 
-    formData.append("file", $('#file').files[0]);
+    formData.append("file", $('#adicionarMaterial').files[0]);
 
     fetch.postFile('upload', formData).then(response => {
         if (response.ok) {

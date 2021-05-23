@@ -1,37 +1,3 @@
-const checkbox = document.getElementById("anotherCombobox");
-checkbox.onclick = comboboxRegisto;
-
-
-function comboboxRegisto() {
-    if (document.getElementById("anotherCombobox").checked)
-        document.getElementById("twelfthBoxContaCrianças").className = "twelfthBoxContaCrianças";
-        document.getElementById("textConfirmContaCrianças").className = "textConfirmContaCrianças";
-
-        document.getElementById("thirteenBoxContaCrianças").className = "thirteenBoxContaCrianças";
-        document.getElementById("textNewPasswordContaCrianças").className = "textNewPasswordContaCrianças";
-
-        document.getElementById("fourteenBoxContaCrianças").className = "fourteenBoxContaCrianças";
-        document.getElementById("textConfirmNewPasswordContaCrianças").className = "textConfirmNewPasswordContaCrianças";
-        
-        document.getElementById("eleventhBoxContaCrianças").style.background = "#EFF0F6";
-        document.getElementById("textChoosePasswordContaCrianças").style.color = "#4C4C4C";
-
-        if ((document.getElementById("checkboxContaCrianças").checked==false)){
-        document.getElementById("twelfthBoxContaCrianças").className = "hidden";
-        document.getElementById("textConfirmContaCrianças").className = "hidden";
-
-        document.getElementById("thirteenBoxContaCrianças").className = "hidden";
-        document.getElementById("textNewPasswordContaCrianças").className = "hidden";
-
-        document.getElementById("fourteenBoxContaCrianças").className = "hidden";
-        document.getElementById("textConfirmNewPasswordContaCrianças").className = "hidden";
-        
-        document.getElementById("eleventhBoxContaCrianças").style.background = "#D8D8D9";
-        document.getElementById("textChoosePasswordContaCrianças").style.color = "#9e9e9e";    
-        }
-}
-
-
 
 
 import * as fetch from "./functions/fetch.js"
@@ -41,22 +7,23 @@ const $ = q => {
   return document.querySelector(q);
 };
 
-const show = q => {
-  $(q).style.display = 'block';
-};
+// const show = q => {
+//   $(q).style.display = 'block';
+// };
 
-const hide = q => {
-  $(q).style.display = 'none';
-};
+// const hide = q => {
+//   $(q).style.display = 'none';
+// };
 
-document.querySelector('.country_select').addEventListener('change', (event) => {
-  getParamsUsers(event.target.value)
+document.querySelector('#anotherCombobox').addEventListener('change', (event) => {
+  console.log(event.target.value)
+  // getParamsUsers(event.target.value)
   sessionStorage.setItem('type', event.target.value)
 })
 
 
 
-$('#btnRegistar').addEventListener('click', function(){
+$('#buttonRegisto').addEventListener('click', function(){
   let type = sessionStorage.getItem('type'); 
   let userRoute = getTypeUser(type)
   let userData = getDataParms(type);
@@ -67,74 +34,75 @@ $('#btnRegistar').addEventListener('click', function(){
 
 
 function getDataParms(type){
+  let d = new Date();
   let dataChild =  {
-    "email": $('#email').value,
-    "password":$('#pwd').value,
-    "confirmPassword":$('#checkPwd').value,
-    "name":$('#name').value,
-    "birthDate":$('#birthDay').value + " 00:00:00",
-    "city":$('#city').value,
-    "county": $('#country').value,
-    "postalCode":$('#postalCode').value,
-    "address":$('#adress').value,
-    "school":$('#school').value,
+    "email": $('#emailBox').value,
+    "password":$('#passwordBox').value,
+    "confirmPassword":$('#confirmPasswordBox').value,
+    "name":$('#nameBox').value,
+    "birthDate": d ,
+    "city":$('#cityBox').value,
+    "county": $('#countyBox').value,
+    "postalCode":$('#postalCodeBox').value,
+    "address":$('#addressBox').value,
+    "school":$('#schoolBox').value,
     "role": {"idRole": 1}
     }
 
     let dataTeenager =  {
-      "email": $('#email').value,
-      "password":$('#pwd').value,
-      "confirmPassword":$('#checkPwd').value,
-      "name":$('#name').value,
-      "birthDate":$('#birthDay').value + " 00:00:00",
-      "phoneNr": $('#phoneNr').value,
-      "city":$('#city').value,
-      "county": $('#country').value,
-      "postalCode":$('#postalCode').value,
-      "address":$('#adress').value,
-      "school":$('#school').value,
+      "email": $('#emailBox').value,
+      "password":$('#passwordBox').value,
+      "confirmPassword":$('#confirmPasswordBox').value,
+      "name":$('#nameBox').value,
+      "birthDate":$('#birthBox').value + " 00:00:00",
+      "phoneNr": $('#phoneNumberBox').value,
+      "city":$('#cityBox').value,
+      "county": $('#countyBox').value,
+      "postalCode":$('#postalCodeBox').value,
+      "address":$('#addressBox').value,
+      "school":$('#schoolBox').value,
       "role": {"idRole": 2}
       }
 
       let dataFamily = {
-        "email": $('#email').value,
-        "password": $('#pwd').value,
-        "confirmPassword": $('#checkPwd').value,
-        "name": $('#name').value,
-        "birthDate": $('#birthDay').value + " 00:00:00",
-        "phoneNr": $('#phoneNr').value,
-        "city": $('#city').value,
-        "county": $('#country').value,
-        "postalCode": $('#postalCode').value,
-        "address": $('#adress').value,
+        "email": $('#emailBox').value,
+        "password":$('#passwordBox').value,
+        "confirmPassword":$('#confirmPasswordBox').value,
+        "name":$('#nameBox').value,
+        "birthDate":$('#birthBox').value + " 00:00:00",
+        "phoneNr": $('#phoneNumberBox').value,
+        "city":$('#cityBox').value,
+        "county": $('#countyBox').value,
+        "postalCode":$('#postalCodeBox').value,
+        "address":$('#addressBox').value,
         "role": { "idRole": 3 }
     }
 
       let dataProchild =  {
-        "email": $('#email').value,
-        "password":$('#pwd').value,
-        "confirmPassword":$('#checkPwd').value,
-        "name":$('#name').value,
-        "birthDate":$('#birthDay').value + " 00:00:00",
-        "phoneNr": $('#phoneNr').value,
-        "city":$('#city').value,
-        "county": $('#country').value,
-        "postalCode":$('#postalCode').value,
-        "address":$('#adress').value,
+        "email": $('#emailBox').value,
+        "password":$('#passwordBox').value,
+        "confirmPassword":$('#confirmPasswordBox').value,
+        "name":$('#nameBox').value,
+        "birthDate":$('#birthBox').value + " 00:00:00",
+        "phoneNr": $('#phoneNumberBox').value,
+        "city":$('#cityBox').value,
+        "county": $('#countyBox').value,
+        "postalCode":$('#postalCodeBox').value,
+        "address":$('#addressBox').value,
         "role": {"idRole": 5}
         }
 
         let psychologist =  {
-          "email": $('#email').value,
-          "password":$('#pwd').value,
-          "confirmPassword":$('#checkPwd').value,
-          "name":$('#name').value,
-          "birthDate":$('#birthDay').value + " 00:00:00",
-          "phoneNr": $('#phoneNr').value,
-          "city":$('#city').value,
-          "county": $('#country').value,
-          "postalCode":$('#postalCode').value,
-          "address":$('#adress').value,
+          "email": $('#emailBox').value,
+          "password":$('#passwordBox').value,
+          "confirmPassword":$('#confirmPasswordBox').value,
+          "name":$('#nameBox').value,
+          "birthDate":$('#birthBox').value + " 00:00:00",
+          "phoneNr": $('#phoneNumberBox').value,
+          "city":$('#cityBox').value,
+          "county": $('#countyBox').value,
+          "postalCode":$('#postalCodeBox').value,
+          "address":$('#addressBox').value,
           "role": {"idRole": 6}
           }
 
@@ -172,79 +140,79 @@ function getTypeUser(type){
 
 
 
-function getParamsUsers(type) {
-  console.log(type)
-  getNoneParms()
+// function getParamsUsers(type) {
+//   console.log(type)
+//   getNoneParms()
 
-  switch (type) {
-    case '1': getChildParms()
-      break;
-    case '2': getTeenagerParms()
-      break;
-    case '3': getAdultsParms()
-      break;
-    case '4': getAdultsParms()
-      break;
-    case '5': getAdultsParms()
-      break;
-  }
-}
-
-
-function getNoneParms() {
-  hide("#name")
-  hide("#birthDay")
-  hide("#email")
-  hide("#postalCode")
-  hide("#city")
-  hide("#country")
-  hide("#adress")
-  hide("#phoneNr")
-  hide("#school")
-  hide("#pwd")
-  hide("#checkPwd")
-};
-
-function getTeenagerParms() {
-  show("#name")
-  show("#birthDay")
-  show("#email")
-  show("#postalCode")
-  show("#city")
-  show("#country")
-  show("#adress")
-  show("#phoneNr")
-  show("#school")
-  show("#pwd")
-  show("#checkPwd")
-}
+//   switch (type) {
+//     case '1': getChildParms()
+//       break;
+//     case '2': getTeenagerParms()
+//       break;
+//     case '3': getAdultsParms()
+//       break;
+//     case '4': getAdultsParms()
+//       break;
+//     case '5': getAdultsParms()
+//       break;
+//   }
+// }
 
 
-function getAdultsParms() {
-  show("#name")
-  show("#birthDay")
-  show("#email")
-  show("#postalCode")
-  show("#city")
-  show("#country")
-  show("#adress")
-  show("#phoneNr")
-  show("#pwd")
-  show("#checkPwd")
-}
+// function getNoneParms() {
+//   hide("#name")
+//   hide("#birthDay")
+//   hide("#email")
+//   hide("#postalCode")
+//   hide("#city")
+//   hide("#country")
+//   hide("#adress")
+//   hide("#phoneNr")
+//   hide("#school")
+//   hide("#pwd")
+//   hide("#checkPwd")
+// };
 
-function getChildParms() {
-  show("#name")
-  show("#birthDay")
-  show("#email")
-  show("#postalCode")
-  show("#city")
-  show("#country")
-  show("#adress")
-  show("#school")
-  show("#pwd")
-  show("#checkPwd")
-}
+// function getTeenagerParms() {
+//   show("#name")
+//   show("#birthDay")
+//   show("#email")
+//   show("#postalCode")
+//   show("#city")
+//   show("#country")
+//   show("#adress")
+//   show("#phoneNr")
+//   show("#school")
+//   show("#pwd")
+//   show("#checkPwd")
+// }
+
+
+// function getAdultsParms() {
+//   show("#name")
+//   show("#birthDay")
+//   show("#email")
+//   show("#postalCode")
+//   show("#city")
+//   show("#country")
+//   show("#adress")
+//   show("#phoneNr")
+//   show("#pwd")
+//   show("#checkPwd")
+// }
+
+// function getChildParms() {
+//   show("#name")
+//   show("#birthDay")
+//   show("#email")
+//   show("#postalCode")
+//   show("#city")
+//   show("#country")
+//   show("#adress")
+//   show("#school")
+//   show("#pwd")
+//   show("#checkPwd")
+// }
 
 
 

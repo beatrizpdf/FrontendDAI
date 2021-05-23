@@ -51,6 +51,7 @@
     border-bottom-right-radius: 16px;
     overflow: hidden;
     border: none;
+    text-align: center;
   }
   .textEmailUsername {
     width: 206px;
@@ -77,6 +78,7 @@
     border-bottom-right-radius: 16px;
     overflow: hidden;
     border: none;
+    text-align: center;
   }
   .textPassword {
     width: 128px;

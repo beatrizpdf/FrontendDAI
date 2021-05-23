@@ -12,47 +12,52 @@
    <body>
       <div class="screen">
         <span class="Registo">Registo</span>
-         <button class="buttonRegisto">Registo</button>
-         <input id="fourthBoxRegisto" class="fourthBox">
-            <span class="textEmail">Insere o teu email</span>
+         <button id="buttonRegisto" class="buttonRegisto">Registo</button>
+         <input id="emailBox" class="emailBox">
+            <span id="textEmail" class="textEmail">Email</span>
          </input>
-         <input id="fifthBoxRegisto" class="fifthBox">
-            <span class="textBirthday">A tua data de nascimento</span>
+         <input id="birthBox" class="birthBox">
+            <span id="textBirthday" class="textBirthday">Data de Nascimento</span>
          </input>
-         <input id="sixthBoxRegisto" class="sixthBox">
-            <span class="textCity">A tua cidade</span>
+         <input id="cityBox" class="cityBox">
+            <span id="textCity" class="textCity">Cidade</span>
          </input>
-         <input id="seventhBoxRegisto" class="seventhBox">
-            <span class="textCounty">O teu conselho</span>
+         <input id="countyBox" class="countyBox">
+            <span id="textCounty" class="textCounty">Concelho</span>
          </input>
-         <input id="eighthBoxRegisto" class="eighthBox">
-            <span class="textPostalCode">O teu código de postal</span>
+         <input id="postalCodeBox" class="postalCodeBox">
+            <span id="textPostalCode" class="textPostalCode">Código de Postal</span>
          </input>
-         <input id="ninthBoxRegisto" class="ninthBox">
-            <span class="textAddress">A tua morada</span>
+         <input id="addressBox" class="addressBox">
+            <span id="textAddress" class="textAddress">Morada</span>
          </input>
-         <input id="tenthBoxRegisto" class="tenthBox">
-            <span class="textSchool">A tua escola</span>
+         <input id="schoolBox" class="schoolBox hiddenS">
+            <span id="textSchool" class="textSchool hiddenE">Escola</span>
          </input>
-         <input id="eleventhBoxRegisto" class="eleventhBox">
-            <span class="textChoosePassword">Escolhe uma palvra passe</span>
+         <input id="phoneNumberBox" class="phoneNumberBox hiddenPn">
+            <span id="textPhoneNumber" class="textPhoneNumber hiddenNt">Número de Telemóvel</span>
          </input>
-         <input id="twelfthBoxRegisto" class="twelfthBox">
-            <span class="textConfirm">Confirmar a palavra passe</span>
+         <input id="passwordBox" class="passwordBox" type="password">
+            <span id="textChoosePassword" class="textChoosePassword">Palvra Passe</span>
          </input>
-         <input id="secondBoxRegisto" class="secondBox">
-            <span class="textName">O teu nome</span>
+         <input id="confirmPasswordBox" class="confirmPasswordBox" type="password">
+            <span id="textConfirm" class="textConfirm">Confirmar Palavra Passe</span>
          </input>
-         <input id="firstBoxRegisto" class="firstBox">
-            <span class="text">Eu sou...</span>
+         <input id="nameBox" class="nameBox">
+            <span id="textName" class="textName">Nome</span>
          </input>
-         <div id="anotherCombobox" class="comboboxs">
+         <div id="euSouBox" class="euSouBox">
+            <span id="text" class="text">Eu sou...</span>
+         </div>
+         <div id="comboboxSou" class="comboboxs">
             <label for="euSou"></label>
-            <select name="sou" id="sou">
-                <option value="criancas">Crianças</option>
-                <option value="adolescentes">Adolescentes</option>
-                <option value="familias">Famílias</option>
-                <option value="instituicoes">Instituições</option>
+            <select name="sou" id="anotherCombobox">
+               <option id="opcao" value="">Selecione uma opção …</option>
+               <option id="criancas" value="1">Criança</option>
+               <option id="adolescentes" value="2">Adolescente</option>
+               <option id="familias" value="3">Família</option>
+               <option id="psicologo" value="4">Psicóloga</option>
+               <option id="equipaProchild" value="5">Prochild</option>
             </select>
          </div>
          <div id="comboboxs" class="comboboxs">
@@ -161,7 +166,15 @@
           <option value="1055">1055</option>
             </select>
         </div>
+        <!-- Modal Section-->
+        <div id="bgmodalRegisto" class="hidden">
+         <span class="welcome"><!--caixa de texto a dizer bem-vindo por se ter registado-->Bem vindo, inicie já a sua sessão!</span>
+         <button id="buttonClose" class="close" onclick="close">X</button>
+         <button id="buttonLoginRegisto" class="buttonLoginRegisto">Iniciar Sessão</button>
+         <button id="buttonInicioRegisto" class="buttonInicioRegisto">Mais tarde</button>
       </div>
-      <script type="text/javascript" src="registo.js"></script>
+      </div>
+      <script type="text/javascript" src="Registo.js"></script>
+      <script type="module" src="../Fetchs/registo.js"></script>
    </body>
 </html>

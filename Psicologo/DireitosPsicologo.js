@@ -13,9 +13,9 @@ function goBack() { //voltar para a página anterior
 }
 
 function dadosfirstbox(){
-    window.location.href="VideosPsicologo.html" //ao carregar no botão vai para a página "VideosCrianças.html"
+    window.location.href="VideosPsicologo.html" //ao carregar no botão vai para a página "VideosCriancas.html"
 }
 
 function dadossecondbox(){
-    window.location.href="ArtigosDireitosPsicologo.html" //ao carregar no botão vai para a página "ArtigosCrianças.html"
+    window.location.href="ArtigosDireitosPsicologo.html" //ao carregar no botão vai para a página "ArtigosCriancas.html"
 }

@@ -2,7 +2,7 @@
 export { getData, postData, deleteData, postFile,putData };
 
 
-const urlBase = "http://localhost:8080/api/"
+const urlBase = "http://127.0.0.1:8080/api/"
 
 async function getData(route) {
     const response = await fetch(urlBase + route);

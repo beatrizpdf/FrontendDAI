@@ -1,7 +1,7 @@
 // import * as fetch from "./functions/fetch.js"
 
 // const fetch = require("node-fetch");
-const urlBase = "http://localhost:8080/api/"
+const urlBase = "http://127.0.0.1:8080/api/"
 
 async function getData(route) {
     const response = await fetch(urlBase + route);
@@ -23,7 +23,8 @@ function postData(route, data) {
             'Content-Type': 'application/json'
         },
         method: 'POST',
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
+        credentials: 'include'
     }).then(function(response) {
         if (!response.ok) {
             console.log(response.status); //=> number 100–599
@@ -51,6 +52,7 @@ function postData(route, data) {
 function deleteData(route) {
     fetch(urlBase + route, {
             method: 'DELETE',
+            credentials: 'include'
         })
         .then(res => res.text()) // or res.json()
         .then(res => console.log(res))
@@ -61,6 +63,7 @@ function putData(route, data) {
         headers: { 'Accept': 'application/json',
             'Content-Type': 'application/json' },
         method: 'PUT',
+        credentials: 'include',
         body: JSON.stringify(data)
     }).then(function(response) {
         if (!response.ok) {

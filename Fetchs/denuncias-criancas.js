@@ -17,8 +17,8 @@ function saveData() {
 
     //So precisas de alterar os estes paramentros
     let denounce = {
-        "title":$('textareaTitulo'),
-        "description":$('textareaAssunto')
+        "title":$('#textareaTitulo').value,
+        "description":$('#textareaAssunto').value
     }
 
     console.log(denounce);

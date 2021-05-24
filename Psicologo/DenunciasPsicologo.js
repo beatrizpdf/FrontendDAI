@@ -19,11 +19,11 @@ function goBack() { //voltar para a página anterior
 }
 
 function dadosfirstrectangle(){
-    window.location.href="BotCrianças.html" //ao carregar no botão vai para a página "BotCrianças.html"
+    window.location.href="BotCriancas.html" //ao carregar no botão vai para a página "BotCriancas.html"
     }
 
 function dadossecondrectangle(){
-    window.location.href="PsicologaCrianças.html" //ao carregar no botão vai para a página "PsicologaCrianças.html"
+    window.location.href="PsicologaCriancas.html" //ao carregar no botão vai para a página "PsicologaCriancas.html"
     }
 
 function denuncia(){

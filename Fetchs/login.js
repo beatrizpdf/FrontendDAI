@@ -1,5 +1,5 @@
 // import * as fetch from "./functions/fetch.js"
-const urlBase = "http://localhost:8080/api/"
+const urlBase = "http://127.0.0.1:8080/api/"
 
 
 const $ = q => {
@@ -26,6 +26,7 @@ function saveData() {
 
     (async () => {
         const settings = {
+            credentials: 'include',
             method: 'POST',
             body: JSON.stringify(credenciais),
             headers: {
@@ -34,7 +35,7 @@ function saveData() {
             }
         };
         try {
-            const fetchResponse = await fetch(`http://localhost:8080/api/auth/signin`, settings);
+            const fetchResponse = await fetch(`http://127.0.0.1:8080/api/auth/signin`, settings);
             const data = await fetchResponse.json();
             console.log(data)
             console.log(data.role)
@@ -53,15 +54,15 @@ function saveData() {
 
 function TypeOfUserPage(type) {
     switch (type) {
-        case "ROLE_CHILD": window.location = "menu_child.html"
+        case "ROLE_CHILD": window.location = "../Criancas/PaginaInicialCriancas.html"
             break;
-        case "ROLE_TEENAGER": window.location = "menu-adolescente.html"
+        case "ROLE_TEENAGER": window.location = "PaginaInicialAdolescentes.html"
             break;
-        case "ROLE_FAMILY": window.location = "menu-familias.html"
+        case "ROLE_FAMILY": window.location = "PaginaInicialFamilias.html"
             break;
-        case "ROLE_PROCHILDCOLLAB": window.location = "menu-prochild.html"
+        case "ROLE_PROCHILDCOLLAB": window.location = "PaginaInicialProChild.html"
             break;
-        case "ROLE_PSYCHOLOGIST": window.location = "menu-psicologa.html"
+        case "ROLE_PSYCHOLOGIST": window.location = "PaginaInicialPsicologo.html"
             break;
         default:
             break;

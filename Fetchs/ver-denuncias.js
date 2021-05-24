@@ -1,4 +1,4 @@
-const urlBase = "http://localhost:8080/api/"
+const urlBase = "http://127.0.0.1:8080/api/"
 
 
 document.getElementById('ver-denun').addEventListener('click', function () {

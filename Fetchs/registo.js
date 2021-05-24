@@ -29,25 +29,41 @@ $('#buttonRegisto').addEventListener('click', function(){
   let userData = getDataParms(type);
   console.log(userRoute)
   console.log(userData)
-  fetch.postData(userRoute, userData);
+  fetch.postData(userRoute, userData).then(response=>{
+    console.log(response)
+  });
 })
 
 
 function getDataParms(type){
   let d = new Date();
+  // let dataChild =  {
+  //   "email": $('#emailBox').value,
+  //   "password":$('#passwordBox').value,
+  //   "confirmPassword":$('#confirmPasswordBox').value,
+  //   "name":$('#nameBox').value,
+  //   "birthDate": d ,
+  //   "city":$('#cityBox').value,
+  //   "county": $('#countyBox').value,
+  //   "postalCode":$('#postalCodeBox').value,
+  //   "address":$('#addressBox').value,
+  //   "school":$('#schoolBox').value,
+  //   "role": {"idRole": 1}
+  //   }
+
   let dataChild =  {
-    "email": $('#emailBox').value,
-    "password":$('#passwordBox').value,
-    "confirmPassword":$('#confirmPasswordBox').value,
-    "name":$('#nameBox').value,
-    "birthDate": d ,
-    "city":$('#cityBox').value,
-    "county": $('#countyBox').value,
-    "postalCode":$('#postalCodeBox').value,
-    "address":$('#addressBox').value,
-    "school":$('#schoolBox').value,
-    "role": {"idRole": 1}
-    }
+      "email": "crianca2@gmail.cpom",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "name": "Beatriz",
+      "birthDate": "2001-02-21 00:00:00",
+      "city": "Braga",
+      "county": "Braga",
+      "postalCode": "4700-558",
+      "address": "Rua rua",
+      "school": "Escola escola",
+      "role": {"idRole": 1}
+      }
 
     let dataTeenager =  {
       "email": $('#emailBox').value,

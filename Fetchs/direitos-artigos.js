@@ -85,7 +85,7 @@ $('#buttonDelete').addEventListener('click', function () {
 function getRights(){
     fetch.getData('rights').then(data => {
         console.log(data);
-        let txt = '<div class="space2"></div><div class="direitos-frase1">Os direitos das crianças são reconhecidos a todas as crianças (menos de 18 anos de idade) sem discriminação alguma, independentemente de qualquer consideração de raça, cor, sexo, idioma, religião, opinião política ou outra da criança, ou da sua família, da sua origem nacional ou social, fortuna, nascimento ou de qualquer outra situação. </div><br></br><div class="direitos-frase2">';
+        let txt = '<div class="space2"></div><div class="direitos-frase1">Os direitos das criancas são reconhecidos a todas as criancas (menos de 18 anos de idade) sem discriminacão alguma, independentemente de qualquer consideracão de raca, cor, sexo, idioma, religião, opinião política ou outra da crianca, ou da sua família, da sua origem nacional ou social, fortuna, nascimento ou de qualquer outra situacão. </div><br></br><div class="direitos-frase2">';
         for (let i = 0; i < data.length; i++) {
             console.log(data[i].rights)
             

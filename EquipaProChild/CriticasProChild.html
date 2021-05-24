@@ -11,11 +11,24 @@
    </head>
    <body>
       <div class="screen">
+         <!-- sweetAlert2 -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
          <div class="titleRectangle"></div>
          <span class="titleCriticas">Críticas</span>
          <button id="buttonDelete" class="buttonDelete"><span class="textDelete">Eliminar</span></button>
-         <button id="buttonbackCriticasProChild" class="fas fa-chevron-left" onclick="goBack()"></button>
+         <button id="buttonbackCriticasProChild" class="fas fa-chevron-left"></button>
+         <table id="Table-denun" class="tableCriticas" style="width:100%">
+            <tr>
+              <th>Nome</th>
+              <th>Crítica</th>
+            </tr>
+            <tr>
+              <td>João Alves</td>
+              <td>Um chat era essencial para a aplicação.</td>
+            </tr>
+          </table>
       </div>
       <script type="text/javascript" src="CriticasProChild.js"></script>
+      <script type="module" src="../Fetchs/criticas-prochild.js"></script>
    </body>
 </html>

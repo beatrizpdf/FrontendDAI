@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+  }
+  .textBot {
+    width: 100px;
+    color: rgba(174,84,205,1);
+    position: absolute;
+    top: 44px;
+    left: 159px;
+    font-family: Roboto;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .purpleRectangle {
+    width: 100px;
+    height: 45px;
+    background: rgba(174,84,205,0.3499999940395355);
+    opacity: 1;
+    position: absolute;
+    top: 43px;
+    left: 158px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .fourthGrayRectangle {
+    width: 319px;
+    height: 78px;
+    background: rgb(241 241 241 / 62%);
+    opacity: 1;
+    position: relative;
+    top: 128px;
+    left: 50px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .answer1 {
+    top: 220px;
+    left: 59px;
+    font-family: Poppins;
+    font-size: 15px;
+    color: rgba(76,76,76);
+    position: absolute;
+    border: none;
+    background: rgba(250, 249, 249, 1);
+    width: 299px;
+    text-align: justify;
+  }
+  .answer2 {
+    top: 451px;
+    left: 59px;
+    font-family: Poppins;
+    font-size: 15px;
+    color: rgba(76,76,76);
+    position: absolute;
+    border: none;
+    background: rgba(250, 249, 249, 1);
+    width: 299px;
+    text-align: justify;
+  }
+  .answer3 {
+    top: 695px;
+    left: 59px;
+    font-family: Poppins;
+    font-size: 15px;
+    color: rgba(76,76,76);
+    position: absolute;
+    border: none;
+    background: rgba(250, 249, 249, 1);
+    width: 299px;
+    text-align: justify;
+  }
+  .answer4 {
+    top: 925px;
+    left: 59px;
+    font-family: Poppins;
+    font-size: 15px;
+    color: rgba(76,76,76);
+    position: absolute;
+    border: none;
+    background: rgba(250, 249, 249, 1);
+    width: 299px;
+    text-align: justify;
+  }
+  .answer5 {
+    top: 1196px;
+    left: 59px;
+    font-family: Poppins;
+    font-size: 15px;
+    color: rgba(76,76,76);
+    position: absolute;
+    border: none;
+    background: rgba(250, 249, 249, 1);
+    width: 299px;
+    text-align: justify;
+  }
+  .thirdGrayRectangle {
+    width: 319px;
+    height: 78px;
+    background: rgb(241 241 241 / 62%);
+    opacity: 1;
+    position: relative;
+    top: 282px;
+    left: 50px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .firstGrayRectangle {
+    width: 319px;
+    height: 50px;
+    background: rgb(241 241 241 / 62%);
+    opacity: 1;
+    position: relative;
+    top: 477px;
+    left: 50px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .fifthGrayRectangle {
+    width: 319px;
+    height: 78px;
+    background: rgb(241 241 241 / 62%);
+    opacity: 1;
+    position: relative;
+    top: 625px;
+    left: 50px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  .secondGrayRectangle {
+    width: 319px;
+    height: 50px;
+    background: rgb(241 241 241 / 62%);
+    opacity: 1;
+    position: relative;
+    top: 850px;
+    left: 50px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    border: none;
+    box-shadow: -4px 4px 2px rgb(171 171 171 / 50%);
+  }
+  #buttonbackBotCriancas {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    border: none;
+    font-size: x-large;
+    color: lightgray;
+    background-color: rgba(250, 249, 249, 1);
+}

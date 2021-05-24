@@ -16,7 +16,7 @@ function getMateriais() {
             console.log(addAPIToUrl(data[i]))
             let img = addAPIToUrl(data[i])
 
-            txt += '<div class="col-md-6"><img width="200" style="margin:10px; border-radius:10px;" src="' + img + '"></div>'
+            txt += '<div class="col-md-6"><img width="200" id="'+data[i].id+'" class="images" style="margin:10px; border-radius:10px;" src="' + img + '"></div>'
         }
         console.log(txt)
 
@@ -29,22 +29,22 @@ function getMateriais() {
 
 
 
-$('#file').addEventListener("change", function () {
-    console.log($('#file').files);
+$('#adicionarMaterial').addEventListener("change", function () {
+    console.log($('#adicionarMaterial').files);
 })
 
 
 
 
-$('#addFile').addEventListener("click", e => {
+$('#buttonAdicionar').addEventListener("click", e => {
 
     e.preventDefault();
 
     const formData = new FormData();
 
-    console.log($('#file').files);
+    console.log($('#adicionarMaterial').files);
 
-    formData.append("file", $('#file').files[0]);
+    formData.append("file", $('#adicionarMaterial').files[0]);
 
     fetch.postFile('upload', formData).then(response => {
         if (response.ok) {
@@ -70,6 +70,7 @@ $('#addFile').addEventListener("click", e => {
 
 
 $('#buttonDelete').addEventListener("click", e => {
+    var el = document.querySelector(".myclass");
     let url = "http://localhost:8080/files/945663e4-0c87-41f1-af58-2d56a77f710a"
     let id = getIDMateriais(url)
     e.preventDefault();

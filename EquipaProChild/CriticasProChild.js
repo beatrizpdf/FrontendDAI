@@ -1,7 +1,7 @@
-const variavel = document.getElementById("#buttonbackCriticasProChild");
-variavel.onclick = goBack;
+// const variavel = document.getElementById("#buttonbackCriticasProChild");
+// variavel.onclick = goBack;
 
 
-function goBack() { //voltar para a página anterior
-    window.history.back()
-}
+// function goBack() { //voltar para a página anterior
+//     window.history.back()
+// }

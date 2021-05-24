@@ -9,8 +9,8 @@ const $ = q => {
   fetch.getData('teenagers/' + sessionStorage.getItem("id_user")).then(data => {
     console.log(data)
     $('#emailBox').value = data.login.email
-    $('#thirteenBoxContaCrianças').value = data.password
-    $('#fourteenBoxContaCrianças').value = data.confirmPassword
+    $('#thirteenBoxContaCriancas').value = data.password
+    $('#fourteenBoxContaCriancas').value = data.confirmPassword
     $('#nameBox').value = data.name  
     $('#birthBox').value = getDateFormat(data.birthDate)
   //  $('#phoneNr').value = data.phoneNr

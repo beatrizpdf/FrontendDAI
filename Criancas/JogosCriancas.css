@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  .screen {
+    width: 414px;
+    height: 736px;
+    background: rgba(250, 249, 249, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .textJogos {
+    width: 202px;
+    color: rgba(216,14,159,1);
+    position: absolute;
+    top: 44px;
+    left: 106px;
+    font-family: Roboto;
+    font-weight: Light;
+    font-size: 36px;
+    opacity: 1;
+    text-align: center;
+  }
+  .secondGrayRectangle {
+    width: 143px;
+    height: 143px;
+    background: rgba(245,244,242,1);
+    opacity: 1;
+    position: absolute;
+    top: 239px;
+    left: 139px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+  }
+  .secondRoseRectangle {
+    width: 131px;
+    height: 131px;
+    background: rgba(228,44,176,0.20999999344348907);
+    opacity: 1;
+    position: absolute;
+    top: 245px;
+    left: 145px;
+    border-top-left-radius: 31px;
+    border-top-right-radius: 31px;
+    border-bottom-left-radius: 31px;
+    border-bottom-right-radius: 31px;
+    overflow: hidden;
+    border: none;
+  }
+  .textTetris {
+    width: 134px;
+    color: rgba(76,76,76);
+    position: absolute;
+    top: 395px;
+    left: 147px;
+    font-family: 'Poppins';
+    font-size: 19px;
+    opacity: 1;
+    text-align: center;
+  }
+  .iconGame {
+    max-width: 73px;
+    max-height: 256px;
+    position: absolute;
+    top: 274px;
+    left: 178px;
+  }
+  #buttonbackJogosCriancas {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    border: none;
+    font-size: x-large;
+    color: lightgray;
+    background-color: rgba(250, 249, 249, 1);
+}

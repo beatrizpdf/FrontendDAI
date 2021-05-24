@@ -13,9 +13,9 @@ function goBack() { //voltar para a página anterior
 }
 
 function dadosfirstrectangle(){
-    window.location.href="BotAdolescentes.html" //ao carregar no botão vai para a página "BotCrianças.html"
+    window.location.href="BotAdolescentes.html" //ao carregar no botão vai para a página "BotCriancas.html"
     }
 
 function dadossecondrectangle(){
-    window.location.href="PsicologaAdolescentes.html" //ao carregar no botão vai para a página "PsicologaCrianças.html"
+    window.location.href="PsicologaAdolescentes.html" //ao carregar no botão vai para a página "PsicologaCriancas.html"
     }
